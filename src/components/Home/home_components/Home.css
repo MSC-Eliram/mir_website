@@ -1,0 +1,76 @@
+.Home {
+    background: url(https://cdn.pixabay.com/photo/2020/06/22/05/45/black-and-white-5327761_960_720.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.textCenterBox {
+    width: 40%;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .textCenterBox {
+        width: 100%;
+    }
+    .home .display-4 {
+        color: greenyellow;
+    }
+    .textCenter, .display-4  {
+        font-size: 1.5rem;
+    }
+    .lead {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 765px) {
+    .textCenterBox {
+        width: 400px;
+    }
+    .textCenter, .display-4  {
+        font-size: 1.5rem;
+    }
+    .lead {
+        font-size: 0.8rem;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .textCenterBox {
+        width: 450px;
+    }
+    .textCenter, .display-4  {
+        font-size: 2rem;
+    }
+    .lead {
+        font-size: 0.8rem;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1025px) {
+    .textCenterBox {
+        width: 550px;
+    }
+    .textCenter, .display-4 {
+        font-size: 2.5rem;
+    }
+    .lead {
+        font-size: 0.9rem;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .textCenterBox {
+        width: 650px;
+    }
+    .textCenter {
+        font-size: 2rem;
+    }
+    .lead {
+        font-size: 0.9rem;
+    }
+}

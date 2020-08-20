@@ -1,0 +1,46 @@
+.card-img-overlay{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .textCenterBox {
+        width: 100%;
+    }
+    .textCenter {
+        font-size: 2.3rem;
+    }
+    
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #homeCard h4 {
+        font-size: 10px;
+    }
+    #homeCard button {
+        font-size: 5px;
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1025px) {
+    .textCenterBox {
+        width: 550px;
+    }
+    .textCenter {
+        font-size: 2.5rem;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .textCenterBox {
+        width: 650px;
+    }
+    .textCenter {
+        font-size: 3rem;
+    }
+}
