@@ -47,24 +47,6 @@ const HomeContact = () => {
                         
                     </div>
                 </div>
-
-
-
-
-
-
-
-                {/* <div className="textCenterBox mt-4 py-4 px-4 item text-center" style={{ margin: "0 auto" }}></div>
-
-                <div className="row align-items-center">
-                    <div className="col-sm">
-                        <img src="https://image.flaticon.com/icons/svg/1034/1034146.svg" alt="email" style={{ width: "45%"}} />
-                    </div>
-                    <div className="col-sm" style={{ border: "1px solid #333" }}>Equal Width Stack
-                     
-                    </div>
-                </div>
-                <hr /> */}
             </div>
         </div>
     );
