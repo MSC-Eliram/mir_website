@@ -41,7 +41,6 @@ const HomeDescription = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="Home d-flex align-items-center">
             <div className="textCenterBox py-2 px-4 item text-center" style={{  backgroundColor: "rgba(255, 255, 255, 0.7", margin: "0 auto" }}>
-                <span><h1 className="textCenter display-4 text-primary">SUCCESS THROUGH DEDICATION & EXECTUION</h1></span>
+                <span><h1 className="textCenter display-4 text-primary">SUCCESS THROUGH DEDICATION & EXECUTION</h1></span>
                 <div>
                     <button className="btn btnn-lg btn-outline-primary mt-4">LEARN MORE</button>
                 </div>
