@@ -1,0 +1,9 @@
+.conformation {
+    background-color: chocolate;
+    display: none;
+}
+
+.conformationAppear {
+    display: block;
+    margin-bottom: 1rem;
+}

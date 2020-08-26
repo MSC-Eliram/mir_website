@@ -12,7 +12,7 @@ class HomeContact extends Component {
             firstName: "",
             lastName: "",
             message: "",
-            sent: true
+            sent: false
         }
     }
 
