@@ -1,10 +1,10 @@
 .HomeSolutions .HS-container {
-    background: url("../../../bulb.svg") no-repeat center right;
+    background: url("../../../images/bulb.svg") no-repeat center right;
     background-size: contain;
     height: 40vh;
 }
 
 .wave {
-    background: url("../../../wave.svg") no-repeat center right;
+    background: url("../../../images/wave.svg") no-repeat center right;
     background-size: cover;
 }

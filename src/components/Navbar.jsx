@@ -28,7 +28,7 @@ const Navbar = () => {
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a className="dropdown-item" href="/from-the-ceo">From the CEO</a>
-                                    <a className="dropdown-item" href="#">Clients</a>
+                                    <a className="dropdown-item" href="/clients">Clients</a>
                                     {/* <div className="dropdown-divider"></div> */}
                                     <a className="dropdown-item" href="#">Partners</a>
                                     <a className="dropdown-item" href="#">Partners</a>

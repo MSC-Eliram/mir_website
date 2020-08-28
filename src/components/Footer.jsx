@@ -3,8 +3,19 @@ import React from 'react'
 import logo from '../logo.png'
 
 const Footer = () => {
+    const ColoredLine = ({ color }) => (
+        <hr
+            style={{
+                color: color,
+                backgroundColor: color,
+                height: 2,
+                marginBottom: "3rem"
+            }}
+        />
+    )
     return (
         <div>
+            <ColoredLine color="#93111e" />
                 <footer>
                     <div className="container">
                         <div className="row mb-2">

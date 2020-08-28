@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import HomePage from './components/Home/HomePage';
 import FromTheCEO from './components/About_Us/FromTheCEO';
+import Clients from './components/About_Us/Clients';
 
 
 
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/" exact component={HomePage} />
                     <Route path="/home" exact component={HomePage} />
                     <Route path="/from-the-ceo" exact component={FromTheCEO} />
+                    <Route path="/clients" exact component={Clients} />
                 </div>
             </BrowserRouter>
             <Footer />
