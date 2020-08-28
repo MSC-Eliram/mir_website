@@ -28,13 +28,15 @@ class HomeContact extends Component {
         evt.preventDefault();
         console.log("Form submited");
         let data = {
+            email: this.state.email,
             firstName: this.state.firstName,
             lastName: this.state.lastName,
             message: this.state.message
         }
         // send POST request to the "server" and fire the resetForm Function
-        axios.post('/api/forma', data).then(res => {
+        axios.post('/api/form', data).then(res => {
             this.setState({ sent: true }, this.resetForm())
+            console.log("Form sent successfully")
             // else...
         }).catch(() => {
             console.log("Something went worng!")
@@ -117,7 +119,7 @@ class HomeContact extends Component {
                                         </div>
                                     </div>
                                     <div className={this.state.sent === false ? "conformation text-center text-primary" : "conformationAppear text-center text-primary"}>
-                                        Thanks! Your email has been sent
+                                        <h4>Thanks! Your email has been sent</h4>
                                     </div>
                                     <button type="submit" className="btn btn-outline-info">Submit</button>
                                 </form>

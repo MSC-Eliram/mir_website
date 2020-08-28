@@ -1,44 +1,108 @@
 import React from 'react';
 
+import './FromTheCEO.css';
+
 const FromTheCEO = () => {
     return ( 
         <div>
-            <div style={{ backgroundColor: "lightblue", height: "20rem" }}></div>
-            <div className="container">
-                <div className="d-flex align-items-center row">
-                    <div className="py-2 px-4 item text-center" style={{ margin: "0 auto" }}>
-                        <div>
-                            <h1 className="display-4 text-primary">TRUSTED ADVISORS</h1>
-                            <br />
-                            <p className="lead">
-                                Start moving your organization in the right direction by receiving trusted advice.
-                                While many offer consultants that are willing to take a critical look at every aspect of your process, our
-                                firm delivers the answers you need and the results your stakeholders are demanding.
-                            </p>
-                            <br />
-                            <p className="lead">
-                                MirLogic Solutions maintains a focus on building enterprise systems that give you an edge over the competition.
-                                To create a system that meets your needs while giving you the tools you need to grow, you must start with a thorough discovery process.
-                            </p>
+            <div className="fromTheCEO" style={{ height: "26rem" }}></div>
+                <div className="container mt-4">
+                    <div className="d-flex align-items-center row mt-4">
+                        <div className="py-4 px-4 item" style={{ margin: "0 auto", height: "100%" }}>
+                            <div>
+                                <h1 className="display-4 text-primary">FROM THE CEO</h1>
+                                <br />
+                                <p>
+                                    Welcome to MirLogic Solutions Corporation. We were established as a small 8(a) minority-owned business in Virginia in 2008. 
+                                    MirLogic brings more than 30 years of multidisciplinary IT experience, technical expertise, and genuine leadership to each project.
+                                </p>
+                                <br />
+                                <p>
+                                    MirLogic currently holds a top-secret facility clearance and is ISO 9001 certified. We are committed to our clients' success, 
+                                    and we work closely with each client throughout the life of a project. Our dedication enables us to focus on our clients' needs and deliver 
+                                    innovative IT solutions that truly address the challenges they face. MirLogic draws on the significant experience of highly skilled information 
+                                    technology consultants who can provide organizations with the tools necessary to grow, adapt, and transform to their target state.
+                                </p>
+
+                                <br />
+                                <br />
+
+                                <h1 className="display-4">EMPOWERING SUCCESS</h1>
+                                <br />
+                                <p>
+                                    We are information solution engineers who have embraced a discovery process that goes above and beyond technological challenges to unlock 
+                                    unique pathways for organizational and individual success.
+                                </p>
+
+                                <br />
+
+                                <div className="row align-items-end text-center mt-4">
+                                    <div className="col-sm text-primary font-weight-bold">We are trusted advisors at the nexus of business and technology</div>
+                                    <div className="col-sm text-primary font-weight-bold">We provide thought leadership and subject matter expertise</div>
+                                    <div className="col-sm text-primary font-weight-bold">We put our customer's interest above our own, and we foster long-term relationships</div>
+                                </div>
+                                
+                                <br />
+                                <br />
+
+                                <h1 className="display-4 mt-4">THOUGHT LEADERSHIP</h1>
+                                <br />
+                                <p>
+                                    MirLogic personnel continually ponder over recent and challenging business and technology issues. We pride ourselves in providing 
+                                    well thought out answers to our customer's biggest questions. We not only consult but also provide training on pertinent topics such 
+                                    as Information Management, Cybersecurity, Software Development, Data Integration, and Cloud Computing.
+                                </p>
+
+            
+                                <br />
+
+                                <h1 className="mt-4 blockquote">THOUGHT LEADERSHIP</h1>
+                                <br />
+                                <p>
+                                    MirLogic personnel continually ponder over recent and challenging business and technology issues. We pride ourselves in providing
+                                    well thought out answers to our customer's biggest questions. We not only consult but also provide training on pertinent topics such
+                                    as Information Management, Cybersecurity, Software Development, Data Integration, and Cloud Computing.
+                                </p>
 
                             <br />
-                            <br />
-                            <h1 className="display-4">WE HELP YOU TO DO WHAT YOU DO BEST</h1>
-                            <br />
-                            <p className="lead">
-                                Our approach to product development and IT certificate training doesn’t just hand you a win; it empowers you to success through
-                                leadership and expertise. Major clients, like our military service branches and federal departments have exacting standards and statutory
-                                obligations to follow. Our understanding of this process positions us to help you achieve your own goals.
-                            </p>
 
-                            <br />
-                            <br />
-
-                            <h2 className="text-primary">TAKE THE FIRST STEP TO SUCCESS</h2>
-                            <p className="lead">
-                                Build a system that is resilient and flexible enough for managed growth. We have the specialization needed for system engineering and so much more.
-                                Start a conversation with our consultants today.
-                            </p>
+                            <h1 className="text-primary mt-4 blockquote">LEADERSHIP BIO</h1>
+                            <div className="row align-items-top mt-4" style={{ marginBottom: "1.5rem" }}>
+                                <div className="col-sm-11 col-md-6">
+                                    <div className="media">
+                                        <img src="https://image.flaticon.com/icons/svg/3135/3135715.svg" className="align-self-start mr-3" alt="..." width="40px" />
+                                            <div className="media-body">
+                                                <h6 className="mt-0">Anthony Richardson</h6>
+                                                <p className="lead">MirLogic CEO, Anthony has more than 20 years' experience in systems, network, and security
+                                                                    engineering. He has delivered exceptional IT consulting services to all branches of the armed forces and has worked with
+                                                                    several federal agencies
+                                                </p>
+                                            <p className="lead">As CEO, Mr. Richardson tries to provide vision and is involved in all aspects of the company, including being a 
+                                                                trusted advisor to government clients, offering his expertise as an enterprise architect, devising information solutions,
+                                                                providing program support to multiple customers, and being a mentor to company employees.
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div className="col-sm-11 col-md-6 align-top">
+                                    <div className="media">
+                                        <img src="https://image.flaticon.com/icons/svg/3135/3135715.svg" className="align-self-start mr-3" alt="..." width="40px" />
+                                            <div className="media-body">
+                                                <h6 className="mt-0">Supriya Ghosh</h6>
+                                                <p className="lead">As VP of MirLogic, Supriya has more than 30 years of experience as a thought leader in technology strategy,
+                                                                    cloud computing, enterprise architecture, and systems engineering. Mr. Ghosh is building MirLogic Academy, a professional 
+                                                                    and technical training service to provide information management certification training.
+                                                </p>
+                                                <p className="lead"> Mr. Ghosh has been a consultant and entrepreneur and has worked for many large firms in information consulting.
+                                                                    He has written several books. His book, "Net Centricity and Technological Interoperability," is currently selling 
+                                                                    on Amazon.com. Mr. Ghosh is using his ability as an industry expert to advise federal agency leadership on new areas 
+                                                                    such as Cloud Adoption, and Cyber Security Risk Assessment. He works with small companies and educational institutions 
+                                                                    and is on the Career Advisory Committee for Johns Hopkins Carey Business School.
+                                                </p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
