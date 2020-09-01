@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './HomeMiniCards.css';
 
 class HomeMiniCards extends Component {
-
     static defaultProps = {
         cards: [
             {
