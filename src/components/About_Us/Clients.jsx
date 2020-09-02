@@ -8,22 +8,26 @@ class Clients extends Component {
             {
                 id: 0,
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Seal_of_the_Federal_Bureau_of_Investigation.svg/1024px-Seal_of_the_Federal_Bureau_of_Investigation.svg.png",
-                text: "FEDERAL BUREAU OF INVESTIGATION"
+                text: "FEDERAL BUREAU OF INVESTIGATION",
+                link: "https://www.fbi.gov/"
             },
             {
                 id: 1,
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Seal_of_the_United_States_Coast_Guard.svg/1024px-Seal_of_the_United_States_Coast_Guard.svg.png",
-                text: "U.S. COAST GUARD"
+                text: "U.S. COAST GUARD",
+                link: "https://www.uscg.mil/"
             },
             {
                 id: 2,
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mark_of_the_United_States_Air_Force.svg/1024px-Mark_of_the_United_States_Air_Force.svg.png",
-                text: "U.S. AIR FORCE"
+                text: "U.S. AIR FORCE",
+                link: "https://www.af.mil/"
             },
             {
                 id: 3,
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/US_CDC_logo.svg/1280px-US_CDC_logo.svg.png",
-                text: "CENTER FOR DISEASE CONTROL"
+                text: "CENTER FOR DISEASE CONTROL",
+                link: "https://www.cdc.gov/"
 
             }
         ],
@@ -31,44 +35,64 @@ class Clients extends Component {
             {
                 id: 4,
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Seal_of_the_United_States_Department_of_the_Navy.svg/1024px-Seal_of_the_United_States_Department_of_the_Navy.svg.png",
-                text: "DEPARTMENT OF THE NAVY"
+                text: "DEPARTMENT OF THE NAVY",
+                link: "https://www.navy.mil/"
             },
             {
-                id: 4,
+                id: 5,
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Seal_of_the_U.S._Defense_Intelligence_Agency.svg/1024px-Seal_of_the_U.S._Defense_Intelligence_Agency.svg.png",
-                text: "DEFENSE INTELLIGENCE AGENCY"
+                text: "DEFENSE INTELLIGENCE AGENCY",
+                link: "https://www.dia.mil/"
             },
             {
-                id: 4,
+                id: 6,
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Emblem_of_the_United_States_Department_of_the_Army.svg/1024px-Emblem_of_the_United_States_Department_of_the_Army.svg.png",
-                text: "DEPARTMENT OF ARMY"
+                text: "DEPARTMENT OF ARMY",
+                link: "https://www.goarmy.com/"
             },
             {
-                id: 4,
+                id: 7,
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Seal_of_the_United_States_Department_of_the_Treasury.svg/1024px-Seal_of_the_United_States_Department_of_the_Treasury.svg.png",
-                text: "DEPARTMENT OF TREASURY"
+                text: "DEPARTMENT OF TREASURY",
+                link: "https://home.treasury.gov/"
             }
         ]
     }
     
     render() { 
+        // Mapping the upper clients row
         const clients1 = this.props.agencies1.map(agency => (
-            <div className="col-sm text-primary font-weight-bold">
-                <div class="card-deck">
-                    <div class="card">
-                        <img src={agency.img} class="card-img-top" alt="agencyLogo" />
+            <div className="logo-display col-sm font-weight-bold" key={agency.id}>
+                <a href={agency.link}>
+                    <div className="d-flex align-items-center row p-2" style={{ height: "11rem" }}>
+                        <div className="p-2 item " style={{ margin: "0 auto" }}>
+                            <div style={{ margin: "0 auto", margin: "0 auto" }}>
+                                <img src={agency.img} className="card-img-end" alt="agencyLogo" style={{ width: "8rem" }} />
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div className="text-display p-0 text-center" style={{ height: "20px", marginTop: "-10px" }}>
+                        <p className="underLine lead text-center font-weight-normal">{agency.text}</p>
+                    </div>
+                </a>
             </div>
         ));
 
+        // Mapping the bottom clients row
         const clients2 = this.props.agencies2.map(agency => (
-            <div className="col-sm text-primary font-weight-bold">
-                <div class="card-deck">
-                    <div class="card">
-                        <img src={agency.img} class="card-img-top" alt="agencyLogo" />
+            <div className="logo-display col-sm font-weight-bold" key={agency.id}>
+                <a href={agency.link}>
+                    <div className="d-flex align-items-center row p-2" style={{ height: "11rem" }}>
+                        <div className="p-2 item " style={{ margin: "0 auto" }}>
+                            <div style={{ margin: "0 auto", margin: "0 auto" }}>
+                                <img src={agency.img} className="card-img-end" alt="agencyLogo" style={{ width: "8rem" }} />
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div className="text-display p-0 text-center" style={{ height: "20px", marginTop: "-10px" }}>
+                        <p className="underLine lead text-center font-weight-normal">{agency.text}</p>
+                        </div>
+                </a>
             </div>
         ));
 
@@ -111,17 +135,18 @@ class Clients extends Component {
                                 that you face with your IT infrastructure. Review our list of clients we serve, including:
                             </p>
 
-                                <br />
-
-                                <div className="row align-items-end text-center mt-4">
+                            <br />
+                            
+                                 <div className="d-flex align-items-center row">
                                     {clients1}
                                 </div>
-                                <div className="row align-items-end text-center mt-4">
+                                
+                                <div className="row align-items-end mt-4">
                                     {clients2}
                                 </div>
 
-                                <br />
-                                <br />
+                            <br />
+                            <br />
                             </div>
                         </div>
                     </div>
