@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import HomePage from './components/Home/HomePage';
 import FromTheCEO from './components/About_Us/FromTheCEO';
 import Clients from './components/About_Us/Clients';
+import Partners from './components/About_Us/Partners';
 
 
 
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/home" exact component={HomePage} />
                     <Route path="/from-the-ceo" exact component={FromTheCEO} />
                     <Route path="/clients" exact component={Clients} />
+                    <Route path="/partners" exact component={Partners} />
                 </div>
             </BrowserRouter>
             <Footer />

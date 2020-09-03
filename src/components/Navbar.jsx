@@ -30,7 +30,7 @@ const Navbar = () => {
                                     <a className="dropdown-item" href="/from-the-ceo">From the CEO</a>
                                     <a className="dropdown-item" href="/clients">Clients</a>
                                     {/* <div className="dropdown-divider"></div> */}
-                                    <a className="dropdown-item" href="#">Partners</a>
+                                    <a className="dropdown-item" href="/partners">Partners</a>
                                     <a className="dropdown-item" href="#">Partners</a>
                                 </div>
                             </li>

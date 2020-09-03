@@ -1,0 +1,46 @@
+.partners {
+    background: url(https://www.smartertravel.com/uploads/2018/03/washington-dc-panorama-hero-1400x500.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 29.25%;
+    opacity: .6;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 15rem;
+  /* width: 257px; */
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #93111ea9;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .1s, visibility .2s;
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}

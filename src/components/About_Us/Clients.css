@@ -3,6 +3,7 @@
     background-size: cover;
     padding-top: 29.25%;
     opacity: .6;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
 .logo-display p {
@@ -13,41 +14,41 @@
 /* Desktops and laptops - nice effect ----------- */
 @media only screen  and (min-width : 1100px) {
     .logo-display {
-    filter: grayscale();
-}
+        filter: grayscale();
+    }
 
-.logo-display:hover {
-    filter: none;
-}
+    .logo-display:hover {
+        filter: none;
+    }
 
-.logo-display .underLine {
-    text-decoration: none;
-    border: 5px solid transparent;
-    display: inline-block;
-    vertical-align: top;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: black;
-    text-align: center;
-    position: relative;
-}
+    .logo-display .underLine {
+        text-decoration: none;
+        border: 5px solid transparent;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: black;
+        text-align: center;
+        position: relative;
+    }
 
-.underLine::after {
-    width: 0%;
-    height: 1px;
-    display: block;
-    background-color: #93111e;
-    content: "";
-    position: absolute;
-    top: 34px;
-    left: 50%;
-    transition: left 0.4s cubic-bezier(0.215, 0.610, 0.355 ,1),
-                width 0.4s cubic-bezier(0.215, 0.610, 0.355, 1)
-}
+    .underLine::after {
+        width: 0%;
+        height: 1px;
+        display: block;
+        background-color: #93111e;
+        content: "";
+        position: absolute;
+        top: 34px;
+        left: 50%;
+        transition: left 0.4s cubic-bezier(0.215, 0.610, 0.355 ,1),
+                    width 0.4s cubic-bezier(0.215, 0.610, 0.355, 1)
+    }
 
-.logo-display:hover .underLine::after {
-    width: 100%;
-    top: 34px;
-    left: 0;
-}
+    .logo-display:hover .underLine::after {
+        width: 100%;
+        top: 34px;
+        left: 0;
+    }
 }
