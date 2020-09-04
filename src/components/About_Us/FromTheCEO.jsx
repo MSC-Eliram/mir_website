@@ -8,7 +8,7 @@ const FromTheCEO = () => {
             <div className="fromTheCEO" style={{ height: "26rem" }}></div>
                 <div className="container mt-4">
                     <div className="d-flex align-items-center row mt-4">
-                        <div className="py-4 px-4 item" style={{ margin: "0 auto", height: "100%" }}>
+                        <div className="py-4 px-4 item">
                             <div>
                                 <h1 className="display-4 text-primary">FROM THE CEO</h1>
                                 <br />
@@ -36,7 +36,7 @@ const FromTheCEO = () => {
 
                                 <br />
 
-                                <div className="row align-items-end text-center mt-4">
+                                <div className="row align-items-top text-center mt-4">
                                     <div className="col-sm text-primary font-weight-bold">We are trusted advisors at the nexus of business and technology</div>
                                     <div className="col-sm text-primary font-weight-bold">We provide thought leadership and subject matter expertise</div>
                                     <div className="col-sm text-primary font-weight-bold">We put our customer's interest above our own, and we foster long-term relationships</div>

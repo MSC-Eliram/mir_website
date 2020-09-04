@@ -10,7 +10,7 @@
 .img__wrap {
   position: relative;
   height: 15rem;
-  /* width: 257px; */
+    /* width: 90%; */
 }
 
 .img__description_layer {
@@ -19,14 +19,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #93111ea9;
+  background: #93111ebb;
   color: white;
   visibility: hidden;
   opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-
   /* transition effect. not necessary */
   transition: opacity .1s, visibility .2s;
 }

@@ -65,7 +65,7 @@ class Clients extends Component {
             <div className="logo-display col-sm font-weight-bold" key={agency.id}>
                 <a href={agency.link}>
                     <div className="d-flex align-items-center row p-2" style={{ height: "11rem" }}>
-                        <div className="p-2 item " style={{ margin: "0 auto" }}>
+                        <div className="p-2 item" style={{ margin: "0 auto" }}>
                             <div style={{ margin: "0 auto", margin: "0 auto" }}>
                                 <img src={agency.img} className="card-img-end" alt="agencyLogo" style={{ width: "8rem" }} />
                             </div>
@@ -102,7 +102,7 @@ class Clients extends Component {
                 <div className="clients" style={{ height: "26rem" }}></div>
                 <div className="container mt-4">
                     <div className="d-flex align-items-center row mt-4">
-                        <div className="py-4 px-4 item" style={{ margin: "0 auto", height: "100%" }}>
+                        <div className="py-4 px-4 item">
                             <div>
                                 <h1 className="display-4 text-primary">CLIENTS</h1>
                                 <br />

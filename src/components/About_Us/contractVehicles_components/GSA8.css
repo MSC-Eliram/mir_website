@@ -1,0 +1,56 @@
+.contractVehicles {
+    background: url(https://www.smartertravel.com/uploads/2018/03/washington-dc-panorama-hero-1400x500.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 29.25%;
+    opacity: .6;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+.sec1{
+    background: url("./sec1.svg") no-repeat center right;
+    background-size: cover;   
+}
+.sec2{
+    background: url("./sec2.svg") no-repeat center right;
+    background-size: cover;   
+}
+
+.gsa-8 img{
+    width: 60%;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .gsa-8 h2, 
+    .gsa-8 h3,
+    .scope h3 {
+        font-size: 1.1rem;
+    }
+    .gsa-8 img{
+    width: 20%;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .gsa-8 h2, 
+    .gsa-8 h3,
+    .scope h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* applies to all list bulles under ABOUT US */
+.section span{
+    color: black
+}
+
+.section li:nth-child(1), .section li:nth-child(2),
+.section li:nth-child(3), .section li:nth-child(4),
+.section li:nth-child(5), .section li:nth-child(6),
+.section li:nth-child(7), .section li:nth-child(8),
+.section li:nth-child(9), .section li:nth-child(10),
+.section li:nth-child(11), .section li:nth-child(12) {
+    color: #93111e;
+}

@@ -8,6 +8,7 @@ import HomePage from './components/Home/HomePage';
 import FromTheCEO from './components/About_Us/FromTheCEO';
 import Clients from './components/About_Us/Clients';
 import Partners from './components/About_Us/Partners';
+import ContractVehicles from './components/About_Us/ContractVehicles';
 
 
 
@@ -22,6 +23,8 @@ function App() {
                     <Route path="/from-the-ceo" exact component={FromTheCEO} />
                     <Route path="/clients" exact component={Clients} />
                     <Route path="/partners" exact component={Partners} />
+                    <Route path="/contract-vehicles" exact component={ContractVehicles} />
+
                 </div>
             </BrowserRouter>
             <Footer />
