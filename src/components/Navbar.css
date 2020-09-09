@@ -1,0 +1,17 @@
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0rem;
+    left: 100%;
+    margin-top: -9px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a::after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 

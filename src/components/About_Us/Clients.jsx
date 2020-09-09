@@ -101,7 +101,7 @@ class Clients extends Component {
             <div>
                 <div className="clients" style={{ height: "26rem" }}></div>
                 <div className="container mt-4">
-                    <div className="d-flex align-items-center row mt-4">
+                    <div className="d-flex row mt-4">
                         <div className="py-4 px-4 item">
                             <div>
                                 <h1 className="display-4 text-primary">CLIENTS</h1>

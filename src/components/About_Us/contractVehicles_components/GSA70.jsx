@@ -11,7 +11,7 @@ const GSA70 = () => {
                     <h3 className="text-primary" style={{ fontWeight: 100 }}>CONTRACT NUMBER: <strong>47QTCA20D003J</strong></h3>
                 </div>
                 <div className="col-sm text-md-right text-lg-center">
-                    <img src="https://lh3.googleusercontent.com/proxy/AOve2cw5rlSXB5ZFzWAVo29ATu7zYG3EHAMtaggq6huGtMRCl5LRXGzGMQ9JF84uzTsgyceg2rxUlUTbjtYDyv2vyscLaGulcee-sYXlvNTUiIU" alt="vehicle-logo" />
+                    <img src="https://lightgrid.com/wp-content/uploads/gsa70.png" alt="vehicle-logo" />
                 </div>
             </div>
             {/* Text */}

@@ -9,7 +9,7 @@ class Partners extends Component {
             <div>
                 <div className="partners" style={{ height: "26rem" }}></div>
                     <div className="container mt-4">
-                        <div className="d-flex align-items-center row mt-4">
+                        <div className="d-flex row mt-4">
                             <div className="py-4 px-4 item">
                                 <h1 className="display-4 text-primary">WORKING TOGETHER WITH OUR PARTNERS</h1>
                             <br />

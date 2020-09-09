@@ -7,7 +7,7 @@ const FromTheCEO = () => {
         <div>
             <div className="fromTheCEO" style={{ height: "26rem" }}></div>
                 <div className="container mt-4">
-                    <div className="d-flex align-items-center row mt-4">
+                    <div className="d-flex row mt-4">
                         <div className="py-4 px-4 item">
                             <div>
                                 <h1 className="display-4 text-primary">FROM THE CEO</h1>
@@ -37,12 +37,11 @@ const FromTheCEO = () => {
                                 <br />
 
                                 <div className="row align-items-top text-center mt-4">
-                                    <div className="col-sm text-primary font-weight-bold">We are trusted advisors at the nexus of business and technology</div>
-                                    <div className="col-sm text-primary font-weight-bold">We provide thought leadership and subject matter expertise</div>
-                                    <div className="col-sm text-primary font-weight-bold">We put our customer's interest above our own, and we foster long-term relationships</div>
+                                    <div className="col-sm text-primary font-weight-bold mb-3">We are trusted advisors at the nexus of business and technology</div>
+                                    <div className="col-sm text-primary font-weight-bold mb-3">We provide thought leadership and subject matter expertise</div>
+                                    <div className="col-sm text-primary font-weight-bold mg-3">We put our customer's interest above our own, and we foster long-term relationships</div>
                                 </div>
                                 
-                                <br />
                                 <br />
 
                                 <h1 className="display-4 mt-4">THOUGHT LEADERSHIP</h1>
@@ -52,7 +51,6 @@ const FromTheCEO = () => {
                                     well thought out answers to our customer's biggest questions. We not only consult but also provide training on pertinent topics such 
                                     as Information Management, Cybersecurity, Software Development, Data Integration, and Cloud Computing.
                                 </p>
-
             
                                 <br />
 
