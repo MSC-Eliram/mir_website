@@ -89,6 +89,9 @@ const CyberActivity = () => {
                                     and tools for data governance to address ongoing needs of customers. MirLogic will also work with customers on data security enforcement points that 
                                     leverage tools such as Cloud Access Security Brokers to verify current state and put in place security controls.   
                                 </p>
+                                
+                                <br />
+                                <br />
                             </div>
                         </div>
                     </div>

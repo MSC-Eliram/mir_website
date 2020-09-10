@@ -13,6 +13,8 @@ import AnalysisServices from './components/Consulting/AnalysisServices';
 import SupportServices from './components/Consulting/SupportServices';
 import DevelopmentServices from './components/Consulting/DevelopmentServices';
 import CyberActivity from './components/Consulting/CyberActivity';
+import AssessmentTraining from './components/Training/AssessmentTraining';
+import CustomerTraining from './components/Training/CustomerTraning';
 
 
 
@@ -32,6 +34,8 @@ function App() {
                     <Route path="/program-support-services" exact component={SupportServices} />
                     <Route path="/solution-development-services" exact component={DevelopmentServices} />
                     <Route path="/cyber-assessment-activity" exact component={CyberActivity} />
+                    <Route path="/assessment-training" exact component={AssessmentTraining} />
+                    <Route path="/customer-training" exact component={CustomerTraining} />
                 </div>
             </BrowserRouter>
             <Footer />
