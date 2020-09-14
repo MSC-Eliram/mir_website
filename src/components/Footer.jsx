@@ -44,14 +44,14 @@ class Footer extends Component {
                             </div>
                             <div className="col-sm-12 col-md-2 lead mb-2" style={{ fontSize: 15 }}>
                                 <ul className="list-unstyled mb-3 ">
-                                    <a href="#" className="list-item">
-                                        <li className="mb-2">About</li>
+                                    <a href="/from-the-ceo" className="list-item">
+                                        <li className="mb-2">ABOUT</li>
                                     </a>
                                     <a href="#" className="list-item">
-                                        <li>Careers</li>
+                                        <li>CAREERS</li>
                                     </a>
                                     <a href="#" className="list-item">
-                                        <li className="mt-2">Blog</li>
+                                        <li className="mt-2">BLOG</li>
                                     </a>
                                 </ul>
                             </div>
