@@ -75,15 +75,15 @@ const Navbar = () => {
                             </li>
                             
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Career
+                                <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    JOIN US
                                 </a>
-                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another action</a>
-                                    <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item" href="#">Something else here</a>
-                                </div>
+                                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a className="dropdown-item" href="/we-are-together">We are together</a>
+                                    <a className="dropdown-item" href="/benefits">Benefits</a>
+                                    <a className="dropdown-item" href="/current-openings">Current Openings</a>
+                                    <a className="dropdown-item" href="/we-are-together">Apply?</a>
+                                </ul>
                             </li>
                             
                             <li className="nav-item dropdown">

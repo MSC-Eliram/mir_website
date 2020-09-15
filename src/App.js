@@ -15,6 +15,8 @@ import DevelopmentServices from './components/Consulting/DevelopmentServices';
 import CyberActivity from './components/Consulting/CyberActivity';
 import AssessmentTraining from './components/Training/AssessmentTraining';
 import CustomerTraining from './components/Training/CustomerTraning';
+import WeAreToghther from './components/Join_Us/WeAreTogether';
+import CurrentOpenings from './components/Join_Us/CurrentOpenings/CurrentOpenings';
 
 
 
@@ -36,6 +38,9 @@ function App() {
                     <Route path="/cyber-assessment-activity" exact component={CyberActivity} />
                     <Route path="/assessment-training" exact component={AssessmentTraining} />
                     <Route path="/customer-training" exact component={CustomerTraining} />
+
+                    <Route path="/we-are-together" exact component={WeAreToghther} />
+                    <Route path="/current-openings" exact component={CurrentOpenings} />
                 </div>
             </BrowserRouter>
             <Footer />
