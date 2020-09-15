@@ -75,7 +75,7 @@ const FromTheCEO = () => {
                                                                     engineering. He has delivered exceptional IT consulting services to all branches of the armed forces and has worked with
                                                                     several federal agencies
                                                 </p>
-                                            <p className="lead">As CEO, Mr. Richardson tries to provide vision and is involved in all aspects of the company, including being a 
+                                                <p className="lead">As CEO, Mr. Richardson tries to provide vision and is involved in all aspects of the company, including being a 
                                                                 trusted advisor to government clients, offering his expertise as an enterprise architect, devising information solutions,
                                                                 providing program support to multiple customers, and being a mentor to company employees.
                                                 </p>
@@ -86,16 +86,13 @@ const FromTheCEO = () => {
                                     <div className="media">
                                         <img src="https://image.flaticon.com/icons/svg/3135/3135715.svg" className="align-self-start mr-3" alt="..." width="40px" />
                                             <div className="media-body">
-                                                <h6 className="mt-0">Supriya Ghosh</h6>
-                                                <p className="lead">As VP of MirLogic, Supriya has more than 30 years of experience as a thought leader in technology strategy,
-                                                                    cloud computing, enterprise architecture, and systems engineering. Mr. Ghosh is building MirLogic Academy, a professional 
-                                                                    and technical training service to provide information management certification training.
+                                                <h6 className="mt-0">Lisa Ryan</h6>
+                                                <p className="lead">Mirlogic COO Lisa Ryan has more than 25 years’ experience in growth and business operations.Ms. Ryan has spent her career in 
+                                                                    supporting government and industry clients. Her experience has focused on developing and delivering technology-driven business 
+                                                                    services, providing exceptional customer service, and driving revenue growth.
                                                 </p>
-                                                <p className="lead"> Mr. Ghosh has been a consultant and entrepreneur and has worked for many large firms in information consulting.
-                                                                    He has written several books. His book, "Net Centricity and Technological Interoperability," is currently selling 
-                                                                    on Amazon.com. Mr. Ghosh is using his ability as an industry expert to advise federal agency leadership on new areas 
-                                                                    such as Cloud Adoption, and Cyber Security Risk Assessment. He works with small companies and educational institutions 
-                                                                    and is on the Career Advisory Committee for Johns Hopkins Carey Business School.
+                                                <p className="lead">Ms. Ryan is responsible for the day to day operations of MirLogic ensures that all of the resources are in place to achieve the 
+                                                                    goals of Mirlogic. Ms. Ryan holds a Master’s degree from George Washington University and a Bachelor’s degree from Roanoke College.
                                                 </p>
                                             </div>
                                     </div>
