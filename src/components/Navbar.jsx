@@ -3,9 +3,6 @@ import React from 'react'
 import logo from '../logo.png'
 import './Navbar.css';
 
-// const style = {
-//     backgroundColor: "rgba(0, 0, 0, 0.4)"
-// }
 
 const Navbar = () => {
     return (
@@ -33,6 +30,7 @@ const Navbar = () => {
                                     <li><a className="dropdown-item" href="/clients">Clients</a></li>
                                     <li><a className="dropdown-item" href="/partners">Partners</a></li>
                                     <li><a className="dropdown-item" href="/contract-vehicles">Contract Vehicles</a></li>
+                                    <li><a className="dropdown-item" href="/clients">Login</a></li>
                                 </ul>
                             </li>
                             
@@ -99,16 +97,6 @@ const Navbar = () => {
                             </li>
                             
                         </ul>
-                        <button className="btn btn-primary btn-sm mr-4 px-3">Login</button>
-                        <form className="form-inline my-2 my-lg-0">
-                            <div className="input-group">
-                                <div className="input-group-prepend">
-                                    <span className="input-group-text bg-white pl-1 pr-0"><i className="fas fa-search p-none"></i></span>
-                                </div>
-                                <input type="text" className="form-control form-control-sm mr-sm-1" aria-label="Default" />
-                                <button className="btn btn-outline-primary btn-sm my-sm-0" type="submit">Search</button>
-                            </div>
-                        </form>
                     </div>
             </nav>
         </div>
