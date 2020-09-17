@@ -18,6 +18,7 @@ import CustomerTraining from './components/Training/CustomerTraning';
 import WeAreToghther from './components/Join_Us/WeAreTogether';
 import CurrentOpenings from './components/Join_Us/CurrentOpenings/CurrentOpenings';
 import Benefits from './components/Join_Us/benefits/Benefits';
+import AboutUsPage from './components/About_Us/contractVehicles_components/AboutUsPage';
 
 
 
@@ -29,8 +30,11 @@ function App() {
                 <div>
                     <Route path="/" exact component={HomePage} />
                     <Route path="/home" exact component={HomePage} />
-                    <Route path="/from-the-ceo" exact component={FromTheCEO} />
-                    <Route path="/clients" exact component={Clients} />
+
+                    <Route path="/about-us" exact component={AboutUsPage} />
+
+                    {/* <Route path="/about-us" exact component={FromTheCEO} /> */}
+                    {/* <Route path="/clients" exact component={Clients} /> */}
                     <Route path="/partners" exact component={Partners} />
                     <Route path="/contract-vehicles" exact component={ContractVehicles} />
                     <Route path="/strategic-analysis-services" exact component={AnalysisServices} />

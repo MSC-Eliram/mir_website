@@ -23,7 +23,8 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <nav className= {this.state.isTop ? 'navbar navbar-expand-lg navbar-light bg-none pr-md-4 pl-md-4 fixed-top original' : 'navbar navbar-expand-lg navbar-light bg-none pr-md-4 pl-md-4 fixed-top colored-nav'}>
+                <nav className={this.state.isTop ? 'navbar navbar-expand-lg navbar-light bg-none pr-md-4 pl-md-4 fixed-top original'
+                                                 : 'navbar navbar-expand-lg navbar-light bg-none pr-md-4 pl-md-4 fixed-top colored-nav'}>
                     <a className="navbar-brand" href="/">
                         <img src={logo} alt="logo" />
                     </a>
@@ -39,11 +40,11 @@ class Navbar extends Component {
                                 
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    ABOUT US
+                                        ABOUT US
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a className="dropdown-item" href="/from-the-ceo/#bio-section">From the CEO</a></li>
-                                        <li><a className="dropdown-item" href="/from-the-ceo">Clients</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section">From the CEO</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#clients-section">Clients</a></li>
                                         <li><a className="dropdown-item" href="/partners">Partners</a></li>
                                         <li><a className="dropdown-item" href="/contract-vehicles">Contract Vehicles</a></li>
                                         <li><a className="dropdown-item" href="/clients">Login</a></li>
