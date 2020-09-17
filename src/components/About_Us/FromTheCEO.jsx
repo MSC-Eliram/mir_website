@@ -65,7 +65,7 @@ const FromTheCEO = () => {
                             <br />
 
                             <h1 className="text-primary mt-4 blockquote">LEADERSHIP BIO</h1>
-                            <div className="row align-items-top mt-4" style={{ marginBottom: "1.5rem" }}>
+                            <div className="row align-items-top mt-4" id="bio-section" style={{ marginBottom: "1.5rem" }}>
                                 <div className="col-sm-11 col-md-6">
                                     <div className="media">
                                         <img src="https://image.flaticon.com/icons/svg/3135/3135715.svg" className="align-self-start mr-3" alt="..." width="40px" />

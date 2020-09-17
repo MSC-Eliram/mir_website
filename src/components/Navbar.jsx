@@ -26,8 +26,8 @@ const Navbar = () => {
                                 ABOUT US
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a className="dropdown-item" href="/from-the-ceo">From the CEO</a></li>
-                                    <li><a className="dropdown-item" href="/clients">Clients</a></li>
+                                    <li><a className="dropdown-item" href="/from-the-ceo/#bio-section">From the CEO</a></li>
+                                    <li><a className="dropdown-item" href="/from-the-ceo">Clients</a></li>
                                     <li><a className="dropdown-item" href="/partners">Partners</a></li>
                                     <li><a className="dropdown-item" href="/contract-vehicles">Contract Vehicles</a></li>
                                     <li><a className="dropdown-item" href="/clients">Login</a></li>
