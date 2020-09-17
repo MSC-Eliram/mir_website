@@ -47,7 +47,7 @@ class Navbar extends Component {
                                         <li><a className="dropdown-item" href="/about-us/#clients-section">Clients</a></li>
                                         <li><a className="dropdown-item" href="/about-us/#partners">Partners</a></li>
                                         <li><a className="dropdown-item" href="/about-us/#contractVehicles">Contract Vehicles</a></li>
-                                        <li><a className="dropdown-item" href="/clients">Login</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#">Login</a></li>
                                     </ul>
                                 </li>
                                 
@@ -83,8 +83,8 @@ class Navbar extends Component {
                                         TRAINING
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">    
-                                        <a className="dropdown-item" href="/assessment-training">Assessment Training</a>
-                                        <a className="dropdown-item" href="/customer-training">Customer Training</a>
+                                        <a className="dropdown-item" href="/training/#assessment-training">Assessment Training</a>
+                                        <a className="dropdown-item" href="/training/#customer-training">Customer Training</a>
                                     </ul>
                                 </li>
                             
@@ -105,10 +105,10 @@ class Navbar extends Component {
                                         JOIN US
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a className="dropdown-item" href="/we-are-together">We are together</a>
-                                        <a className="dropdown-item" href="/benefits">Benefits</a>
-                                        <a className="dropdown-item" href="/current-openings">Current Openings</a>
-                                        <a className="dropdown-item" href="/we-are-together">Apply?</a>
+                                        <a className="dropdown-item" href="/join-us/#we-are-together">We are together</a>
+                                        <a className="dropdown-item" href="/join-us/#benefits">Benefits</a>
+                                        <a className="dropdown-item" href="/join-us/#current-openings">Current Openings</a>
+                                        <a className="dropdown-item" href="/join-us/#">Apply</a>
                                     </ul>
                                 </li>
                                 
