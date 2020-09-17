@@ -5,19 +5,19 @@ import './custom-theme.scss'
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import HomePage from './components/Home/HomePage';
-import FromTheCEO from './components/About_Us/FromTheCEO';
-import Clients from './components/About_Us/Clients';
-import Partners from './components/About_Us/Partners';
-import ContractVehicles from './components/About_Us/ContractVehicles';
-import AnalysisServices from './components/Consulting/AnalysisServices';
-import SupportServices from './components/Consulting/SupportServices';
-import DevelopmentServices from './components/Consulting/DevelopmentServices';
-import CyberActivity from './components/Consulting/CyberActivity';
-import AssessmentTraining from './components/Training/AssessmentTraining';
-import CustomerTraining from './components/Training/CustomerTraning';
-import WeAreToghther from './components/Join_Us/WeAreTogether';
-import CurrentOpenings from './components/Join_Us/CurrentOpenings/CurrentOpenings';
-import Benefits from './components/Join_Us/benefits/Benefits';
+// import FromTheCEO from './components/About_Us/FromTheCEO';
+// import Clients from './components/About_Us/Clients';
+// import Partners from './components/About_Us/Partners';
+// import ContractVehicles from './components/About_Us/ContractVehicles';
+// import AnalysisServices from './components/Consulting/AnalysisServices';
+// import SupportServices from './components/Consulting/SupportServices';
+// import DevelopmentServices from './components/Consulting/DevelopmentServices';
+// import CyberActivity from './components/Consulting/CyberActivity';
+// import AssessmentTraining from './components/Training/AssessmentTraining';
+// import CustomerTraining from './components/Training/CustomerTraning';
+// import WeAreToghther from './components/Join_Us/WeAreTogether';
+// import CurrentOpenings from './components/Join_Us/CurrentOpenings/CurrentOpenings';
+// import Benefits from './components/Join_Us/benefits/Benefits';
 import AboutUsPage from './components/About_Us/contractVehicles_components/AboutUsPage';
 
 
@@ -30,23 +30,13 @@ function App() {
                 <div>
                     <Route path="/" exact component={HomePage} />
                     <Route path="/home" exact component={HomePage} />
-
                     <Route path="/about-us" exact component={AboutUsPage} />
-
-                    {/* <Route path="/about-us" exact component={FromTheCEO} /> */}
-                    {/* <Route path="/clients" exact component={Clients} /> */}
-                    <Route path="/partners" exact component={Partners} />
-                    <Route path="/contract-vehicles" exact component={ContractVehicles} />
-                    <Route path="/strategic-analysis-services" exact component={AnalysisServices} />
-                    <Route path="/program-support-services" exact component={SupportServices} />
-                    <Route path="/solution-development-services" exact component={DevelopmentServices} />
-                    <Route path="/cyber-assessment-activity" exact component={CyberActivity} />
-                    <Route path="/assessment-training" exact component={AssessmentTraining} />
-                    <Route path="/customer-training" exact component={CustomerTraining} />
-
-                    <Route path="/we-are-together" exact component={WeAreToghther} />
+                    <Route path="/services" exact component={ServicesPage} />
+                    <Route path="/training" exact component={TrainingPage} />
+                    <Route path="/join-us" exact component={JoinUsPage} />
+                    {/* <Route path="/we-are-together" exact component={WeAreToghther} />
                     <Route path="/benefits" exact component={Benefits} />
-                    <Route path="/current-openings" exact component={CurrentOpenings} />
+                    <Route path="/current-openings" exact component={CurrentOpenings} /> */}
                 </div>
             </BrowserRouter>
             <Footer />

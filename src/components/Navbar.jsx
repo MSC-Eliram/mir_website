@@ -45,13 +45,13 @@ class Navbar extends Component {
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section">From the CEO</a></li>
                                         <li><a className="dropdown-item" href="/about-us/#clients-section">Clients</a></li>
-                                        <li><a className="dropdown-item" href="/partners">Partners</a></li>
-                                        <li><a className="dropdown-item" href="/contract-vehicles">Contract Vehicles</a></li>
-                                        <li><a className="dropdown-item" href="/clients">Login</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#partners">Partners</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#contractVehicles">Contract Vehicles</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#">Login</a></li>
                                     </ul>
                                 </li>
                                 
-                                <li className="nav-item dropdown">
+                                {/* <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         CONSULTING
                                     </a>
@@ -65,6 +65,17 @@ class Navbar extends Component {
                                         </li>
                                         <li><a className="dropdown-item" href="/cyber-assessment-activity">Cyber Assessment Activity</a></li>
                                     </ul>
+                                </li> */}
+
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SERVICES
+                                    </a>
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">    
+                                        <li><a className="dropdown-item" href="/services/#program-support">Program Support</a></li>
+                                        <li><a className="dropdown-item" href="/services/#engineering">Engineering</a></li>
+                                        <li><a className="dropdown-item" href="/services/#business-intelligence">Business Intelligence</a></li>
+                                    </ul>
                                 </li>
                                 
                                 <li className="nav-item dropdown">
@@ -72,8 +83,8 @@ class Navbar extends Component {
                                         TRAINING
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">    
-                                        <a className="dropdown-item" href="/assessment-training">Assessment Training</a>
-                                        <a className="dropdown-item" href="/customer-training">Customer Training</a>
+                                        <a className="dropdown-item" href="/training/#assessment-training">Assessment Training</a>
+                                        <a className="dropdown-item" href="/training/#customer-training">Customer Training</a>
                                     </ul>
                                 </li>
                             
@@ -94,10 +105,10 @@ class Navbar extends Component {
                                         JOIN US
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a className="dropdown-item" href="/we-are-together">We are together</a>
-                                        <a className="dropdown-item" href="/benefits">Benefits</a>
-                                        <a className="dropdown-item" href="/current-openings">Current Openings</a>
-                                        <a className="dropdown-item" href="/we-are-together">Apply?</a>
+                                        <a className="dropdown-item" href="/join-us/#we-are-together">We are together</a>
+                                        <a className="dropdown-item" href="/join-us/#benefits">Benefits</a>
+                                        <a className="dropdown-item" href="/join-us/#current-openings">Current Openings</a>
+                                        <a className="dropdown-item" href="/join-us/#">Apply</a>
                                     </ul>
                                 </li>
                                 
