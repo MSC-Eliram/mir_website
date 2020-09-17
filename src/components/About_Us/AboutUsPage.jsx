@@ -1,6 +1,6 @@
 import React from 'react';
-import Clients from '../Clients';
-import FromTheCEO from '../FromTheCEO';
+import Clients from './Clients';
+import FromTheCEO from './FromTheCEO';
 
 
 
