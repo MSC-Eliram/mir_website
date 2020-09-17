@@ -63,7 +63,6 @@ class Clients extends Component {
         // Mapping the upper clients row
         const clients1 = this.props.agencies1.map(agency => (
             <div className="logo-display col-sm font-weight-bold" key={agency.id}>
-                <a href={agency.link}>
                     <div className="d-flex align-items-center row p-2" style={{ height: "11rem" }}>
                         <div className="p-2 item" style={{ margin: "0 auto" }}>
                             <div style={{ margin: "0 auto", margin: "0 auto" }}>
@@ -74,14 +73,12 @@ class Clients extends Component {
                     <div className="text-display p-0 text-center" style={{ height: "20px", marginTop: "-10px" }}>
                         <p className="underLine lead text-center font-weight-normal">{agency.text}</p>
                     </div>
-                </a>
             </div>
         ));
 
         // Mapping the bottom clients row
         const clients2 = this.props.agencies2.map(agency => (
             <div className="logo-display col-sm font-weight-bold" key={agency.id}>
-                <a href={agency.link}>
                     <div className="d-flex align-items-center row p-2" style={{ height: "11rem" }}>
                         <div className="p-2 item " style={{ margin: "0 auto" }}>
                             <div style={{ margin: "0 auto", margin: "0 auto" }}>
@@ -92,7 +89,6 @@ class Clients extends Component {
                     <div className="text-display p-0 text-center" style={{ height: "20px", marginTop: "-10px" }}>
                         <p className="underLine lead text-center font-weight-normal">{agency.text}</p>
                         </div>
-                </a>
             </div>
         ));
 

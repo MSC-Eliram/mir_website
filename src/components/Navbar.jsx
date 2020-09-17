@@ -45,13 +45,13 @@ class Navbar extends Component {
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section">From the CEO</a></li>
                                         <li><a className="dropdown-item" href="/about-us/#clients-section">Clients</a></li>
-                                        <li><a className="dropdown-item" href="/partners">Partners</a></li>
-                                        <li><a className="dropdown-item" href="/contract-vehicles">Contract Vehicles</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#partners">Partners</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#contractVehicles">Contract Vehicles</a></li>
                                         <li><a className="dropdown-item" href="/clients">Login</a></li>
                                     </ul>
                                 </li>
                                 
-                                <li className="nav-item dropdown">
+                                {/* <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         CONSULTING
                                     </a>
@@ -64,6 +64,17 @@ class Navbar extends Component {
                                             </ul>
                                         </li>
                                         <li><a className="dropdown-item" href="/cyber-assessment-activity">Cyber Assessment Activity</a></li>
+                                    </ul>
+                                </li> */}
+
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SERVICES
+                                    </a>
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">    
+                                        <li><a className="dropdown-item" href="/services/#program-support">Program Support</a></li>
+                                        <li><a className="dropdown-item" href="/services/#engineering">Engineering</a></li>
+                                        <li><a className="dropdown-item" href="/services/#business-intelligence">Business Intelligence</a></li>
                                     </ul>
                                 </li>
                                 

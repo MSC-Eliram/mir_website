@@ -1,28 +1,23 @@
 import React from 'react';
-import Clients from './Clients';
-import ContractVehicles from './ContractVehicles';
-import FromTheCEO from './FromTheCEO';
-import Partners from './Partners';
+import ProgramSupport from './ProgramSupport';
+import Engineering from './Engineering';
+import BusinessIntelligence from './BusinessIntelligence';
 
 
-
-const AboutUsPage = () => {
+const ServicesPage = () => {
     return (  
         <div>
             <div className="fromTheCEO" style={{ height: "26rem" }}></div>
             <div className="container mt-4">
                 <div className="d-flex row mt-4">
                     <div className="py-4 px-4 item"> 
-                        <FromTheCEO />
+                        <ProgramSupport />
                         <br />
                         <br />
-                        <Clients />
+                        <Engineering />
                         <br />
                         <br />
-                        <Partners />
-                        <br />
-                        <br />
-                        <ContractVehicles />
+                        <BusinessIntelligence />
                     </div>
                 </div>
             </div>
@@ -30,4 +25,4 @@ const AboutUsPage = () => {
     );
 }
  
-export default AboutUsPage;
+export default ServicesPage;
