@@ -3,7 +3,6 @@ import Clients from './Clients';
 import FromTheCEO from './FromTheCEO';
 
 
-
 const AboutUsPage = () => {
     return (  
         <div>
