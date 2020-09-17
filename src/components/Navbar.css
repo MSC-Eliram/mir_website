@@ -10,6 +10,17 @@
     margin-top: -9px;
 }
 
+.colored-nav {
+    transition: ease-in-out 0.4s;
+    background-color: #d3d3d3ee;
+    font-weight: 600;
+}
+
+.original {
+    transition: ease-in 0.4s;
+}
+
+
 /* rotate caret on hover */
 .dropdown-menu > li > a::after {
     text-decoration: underline;
