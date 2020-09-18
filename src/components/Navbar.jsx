@@ -117,16 +117,7 @@ class Navbar extends Component {
                                         CONTACT US
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="/contact-us-q">Contact Us</a>
-                                    </div>
-                                </li>
-
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Contact Eliram
-                                        </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="/contact-me">Contact me</a>
+                                        <a className="dropdown-item" href="/contact-us">Contact Us</a>
                                     </div>
                                 </li>
     

@@ -9,7 +9,6 @@ import AboutUsPage from './components/About_Us//AboutUsPage';
 import ServicesPage from './components/Services/ServicesPage';
 import TrainingPage from './components/Training/TrainingPage';
 import JoinUsPage from './components/Join_Us/JoinUsPage';
-import ContactUsPage from './components/Contact_Us/ContactUsPage';
 import ContactMe from './components/contactme/ContactMe';
 
 
@@ -26,8 +25,7 @@ function App() {
                     <Route path="/services" exact component={ServicesPage} />
                     <Route path="/training" exact component={TrainingPage} />
                     <Route path="/join-us" exact component={JoinUsPage} />
-                    <Route path="/contact-us" exact component={ContactUsPage} />
-                    <Route path="/contact-me" exact component={ContactMe} />
+                    <Route path="/contact-us" exact component={ContactMe} />
                 </div>
             </BrowserRouter>
             <Footer />

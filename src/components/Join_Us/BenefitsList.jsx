@@ -61,7 +61,6 @@ class BenefitsList extends Component {
 
         return (  
             <div>
-                <h1>My Benefits List goes here!!!</h1>
                 <div className="row">
                     <div className="row align-items-top mt-4">
                         {benefitsDisplay}
