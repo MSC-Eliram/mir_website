@@ -3,6 +3,7 @@ import Clients from './Clients';
 import ContractVehicles from './ContractVehicles';
 import FromTheCEO from './FromTheCEO';
 import Partners from './Partners';
+import Login from './Login';
 
 
 const AboutUsPage = () => {
@@ -22,6 +23,7 @@ const AboutUsPage = () => {
                         <br />
                         <br />
                         <ContractVehicles />
+                        <Login />
                     </div>
                 </div>
             </div>
