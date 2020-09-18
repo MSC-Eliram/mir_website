@@ -22,6 +22,7 @@ import AboutUsPage from './components/About_Us//AboutUsPage';
 import ServicesPage from './components/Services/ServicesPage';
 import TrainingPage from './components/Training/TrainingPage';
 import JoinUsPage from './components/Join_Us/JoinUsPage';
+import ContactMe from './components/contactme/ContactMe';
 
 
 
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/services" exact component={ServicesPage} />
                     <Route path="/training" exact component={TrainingPage} />
                     <Route path="/join-us" exact component={JoinUsPage} />
+                    <Route path="/contact-me" exact component={ContactMe} />
                     {/* <Route path="/we-are-together" exact component={WeAreToghther} />
                     <Route path="/benefits" exact component={Benefits} />
                     <Route path="/current-openings" exact component={CurrentOpenings} /> */}
