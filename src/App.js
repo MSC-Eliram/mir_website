@@ -18,7 +18,10 @@ import HomePage from './components/Home/HomePage';
 // import WeAreToghther from './components/Join_Us/WeAreTogether';
 // import CurrentOpenings from './components/Join_Us/CurrentOpenings/CurrentOpenings';
 // import Benefits from './components/Join_Us/benefits/Benefits';
-import AboutUsPage from './components/About_Us/contractVehicles_components/AboutUsPage';
+import AboutUsPage from './components/About_Us//AboutUsPage';
+import ServicesPage from './components/Services/ServicesPage';
+import TrainingPage from './components/Training/TrainingPage';
+import JoinUsPage from './components/Join_Us/JoinUsPage';
 
 
 
