@@ -9,6 +9,7 @@ import Login from './About_Us/Login';
 class Navbar extends Component {
     state = {
         isTop: true,
+        loggedIn: false
     };
 
     componentDidMount() {
@@ -17,7 +18,6 @@ class Navbar extends Component {
             if (isTop !== this.state.isTop) {
                 this.setState({ isTop })
             }
-            console.log(isTop + " " + this.state.isTop);
         });
     }
 
@@ -124,7 +124,7 @@ class Navbar extends Component {
                                 </li>
 
                                 <li className="nav-item">
-                                    <a class="nav-link" href="/about-us/#loginModal"  data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>LOGIN</a>
+                            <a class="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
                                 </li>
     
                             </ul>

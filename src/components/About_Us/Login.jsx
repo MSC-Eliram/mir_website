@@ -7,9 +7,7 @@ class Login extends Component {
         super();
         this.state = {
             username: "",
-            password: "",
-            type: "",
-            full_description: ""
+            password: ""
         }
     }
 
@@ -20,12 +18,9 @@ class Login extends Component {
         });
     }
 
-    closeModal = () => {
-        this.setState({
-            modalIsOpen: false
-        }, () => {
-            this.props.resetInputData();
-        });
+    clear = () => {
+        console.log("Clear ME!");
+        this.setState({username: "", password: ""});
     }
 
     render() {
@@ -91,7 +86,7 @@ class Login extends Component {
 
                                     {/* Buttons */}
                                     <div className="modal-footer">
-                                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={this.clear}>Cancel</button>
                                         <button type="button" className="btn btn-primary">Login</button>
                                     </div>
                                 </form>

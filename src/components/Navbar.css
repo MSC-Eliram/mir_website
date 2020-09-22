@@ -25,3 +25,11 @@
     text-decoration: underline;
     transform: rotate(-90deg);
 } 
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 990px) {
+    /* Styles */
+    .navbar {
+        background-color: #d3d3d379;
+    }
+    }
