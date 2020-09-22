@@ -49,7 +49,7 @@ const BusinessIntelligence = () => {
             <br />
 
             <p>Rolling out a new process or a unique management structure 
-                requires <sapn><strong><a href="/assessment-training">certification training programs</a></strong></sapn> and a focus on technology. 
+                requires <span><strong><a href="/assessment-training">certification training programs</a></strong></span> and a focus on technology. 
                 Our support services include:
             </p>
 

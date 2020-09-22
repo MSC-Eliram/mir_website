@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { render } from 'react-dom'
+// import { NavLink, Link } from 'react-router-dom';
 
 import logo from '../logo.png'
 import './Navbar.css';
@@ -7,21 +7,24 @@ import Login from './About_Us/Login';
 
 
 class Navbar extends Component {
-    state = {
-        isTop: true,
-        loggedIn: false
-    };
-
+    constructor(props) {
+        super();
+        this.state = {
+            isTop: true,
+            loggedIn: false
+        }
+    }
+    
     componentDidMount() {
         document.addEventListener('scroll', () => {
             const isTop = window.scrollY < 100;
             if (isTop !== this.state.isTop) {
                 this.setState({ isTop })
-            }
+            } 
         });
     }
 
-    render() {
+    render() {  
         return (
             <div>
                 <Login />
@@ -122,12 +125,11 @@ class Navbar extends Component {
                                         <a className="dropdown-item" href="/contact-us">Contact Us</a>
                                     </ul>
                                 </li>
-
-                                <li className="nav-item">
-                            <a class="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
-                                </li>
-    
                             </ul>
+                            {/*  Login button */}
+                            <form className="form-inline my-2 my-lg-0">
+                                <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
+                            </form>
                         </div>
                 </nav>
             </div>

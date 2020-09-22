@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './custom-theme.scss'
 
 import Footer from './components/Footer';
@@ -19,13 +19,15 @@ function App() {
             <Navbar />
             <BrowserRouter>
                 <div>
-                    <Route path="/" exact component={HomePage} />
-                    <Route path="/home" exact component={HomePage} />
-                    <Route path="/about-us" exact component={AboutUsPage} />
-                    <Route path="/services" exact component={ServicesPage} />
-                    <Route path="/training" exact component={TrainingPage} />
-                    <Route path="/join-us" exact component={JoinUsPage} />
-                    <Route path="/contact-us" exact component={ContactMe} />
+                    <Switch>
+                        <Route path="/" exact component={HomePage} />
+                        <Route path="/home" exact component={HomePage} />
+                        <Route path="/about-us" exact component={AboutUsPage} />
+                        <Route path="/services" exact component={ServicesPage} />
+                        <Route path="/training" exact component={TrainingPage} />
+                        <Route path="/join-us" exact component={JoinUsPage} />
+                        <Route path="/contact-us" exact component={ContactMe} />
+                    </Switch>
                 </div>
             </BrowserRouter>
             <Footer />
