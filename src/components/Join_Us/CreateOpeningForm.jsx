@@ -18,6 +18,11 @@ class CreateOpeningForm extends Component {
         });
     }
 
+    clear = () => {
+        console.log("Clear ME!");
+        this.setState({title: "", location: "", type: "", full_description: ""});
+    }
+
     render() { 
         return (  
             <div>
@@ -80,7 +85,7 @@ class CreateOpeningForm extends Component {
                                
                                     {/* Buttons */}
                                     <div className="modal-footer">
-                                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={this.clear}>Cancel</button>
                                         <button type="button" className="btn btn-primary">Create</button>
                                     </div>
                                 </form>
