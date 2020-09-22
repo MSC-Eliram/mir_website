@@ -6,8 +6,6 @@ import HomeDescription from './home_components/HomeDescription';
 import HomeSolutions from './home_components/HomeSolutions';
 import HomeContact from './home_components/HomeContact';
 
-
-
 const HomePage = () => {
     return (
         <div>

@@ -21,10 +21,10 @@ class CreateOpeningForm extends Component {
     render() { 
         return (  
             <div>
-                <button type="button" className="btn btn-outline-primary lead" data-toggle="modal" data-target="#exampleModal">Add New Position +</button>
+                <button type="button" className="btn btn-outline-primary lead" data-toggle="modal" data-target="#opportunityModal">Add New Position +</button>
 
                 {/* <!-- Modal --> */}
-                <div className="modal fade " id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal fade " id="opportunityModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">

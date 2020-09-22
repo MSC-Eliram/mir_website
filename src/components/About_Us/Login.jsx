@@ -20,13 +20,21 @@ class Login extends Component {
         });
     }
 
+    closeModal = () => {
+        this.setState({
+            modalIsOpen: false
+        }, () => {
+            this.props.resetInputData();
+        });
+    }
+
     render() {
         return (
             <div>
-                <button type="button" className="btn btn-primary lead" data-toggle="modal" data-target="#exampleModal">Login</button>
+                {/* <button type="button" className="btn btn-primary lead" data-toggle="modal" data-target="#exampleModal">Login</button> */}
 
                 {/* <!-- Modal --> */}
-                <div className="modal fade " id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal fade " id="loginModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
