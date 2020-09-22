@@ -47,7 +47,7 @@ class Navbar extends Component {
                                         <li><a className="dropdown-item" href="/about-us/#clients">Clients</a></li>
                                         <li><a className="dropdown-item" href="/about-us/#partners">Partners</a></li>
                                         <li><a className="dropdown-item" href="/about-us/#contractVehicles">Contract Vehicles</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#">Login</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#exampleModal" data-toggle="modal" data-target="#exampleModal">Login</a></li>
                                     </ul>
                                 </li>
                                 
@@ -113,12 +113,12 @@ class Navbar extends Component {
                                 </li>
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         CONTACT US
                                     </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a className="dropdown-item" href="/contact-us">Contact Us</a>
-                                    </div>
+                                    </ul>
                                 </li>
     
                             </ul>
