@@ -26,6 +26,8 @@ class Navbar extends Component {
     {
         console.log(e);
         var current = document.getElementsByClassName("active");
+        this.setState({selected: e});
+        console.log(this.state.selected);
         console.log(current);
         if(current != []) {
             current[0].className = current[0].className.replace(" active", "");
@@ -138,9 +140,15 @@ class Navbar extends Component {
                                     </ul>
                                 </li>
 
+<<<<<<< HEAD
                                 {/* <li className="nav-item">
                                     <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
                                 </li> */}
+=======
+                                <li className="nav-item">
+                            <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
+                                </li>
+>>>>>>> 8d058aadcc171e0752ab381043a47c69272499fe
     
                             </ul>
                             {/*  Login button */}

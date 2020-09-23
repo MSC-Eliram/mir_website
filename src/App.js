@@ -10,16 +10,17 @@ import ServicesPage from './components/Services/ServicesPage';
 import TrainingPage from './components/Training/TrainingPage';
 import JoinUsPage from './components/Join_Us/JoinUsPage';
 import ContactMe from './components/contactme/ContactMe';
+import UserProvider from './Providers/UserProvider';
 
 
 
 function App() {
     return (
         <div>
-            <Navbar />
-            <BrowserRouter>
-                <div>
-                    <Switch>
+            <UserProvider>
+                <Navbar />
+                <BrowserRouter>
+                    <div>
                         <Route path="/" exact component={HomePage} />
                         <Route path="/home" exact component={HomePage} />
                         <Route path="/about-us" exact component={AboutUsPage} />
@@ -27,9 +28,9 @@ function App() {
                         <Route path="/training" exact component={TrainingPage} />
                         <Route path="/join-us" exact component={JoinUsPage} />
                         <Route path="/contact-us" exact component={ContactMe} />
-                    </Switch>
-                </div>
-            </BrowserRouter>
+                    </div>
+                </BrowserRouter>
+            </UserProvider>
             <Footer />
         </div>
     );
