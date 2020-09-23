@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
 import CreateOpeningForm from './CreateOpeningForm';
+import OpeningsList from './OpeningsList';
+
 
 class CurrentOpenings extends Component {
     constructor(props) {
-        super(props);
+        super();
         this.state = {  }
     }
     render() { 
@@ -13,9 +15,9 @@ class CurrentOpenings extends Component {
                 <h1 className="display-4 text-primary aboutUs-sections" id="current-openings">CURRENT OPENINGS</h1>
 
                 <br />
+                <br />
 
-                {/* Modal to create a new position */}
-                <CreateOpeningForm />
+                <OpeningsList />
 
                 <br />
                 <br />
