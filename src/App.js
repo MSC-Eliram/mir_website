@@ -10,14 +10,14 @@ import ServicesPage from './components/Services/ServicesPage';
 import TrainingPage from './components/Training/TrainingPage';
 import JoinUsPage from './components/Join_Us/JoinUsPage';
 import ContactMe from './components/contactme/ContactMe';
-import UserProvider from './Providers/UserProvider';
+// import UserProvider from './Providers/UserProvider';
 
 
 
 function App() {
     return (
         <div>
-            <UserProvider>
+            {/* <UserProvider> */}
                 <Navbar />
                 <BrowserRouter>
                     <div>
@@ -30,7 +30,7 @@ function App() {
                         <Route path="/contact-us" exact component={ContactMe} />
                     </div>
                 </BrowserRouter>
-            </UserProvider>
+            {/* </UserProvider> */}
             <Footer />
         </div>
     );
