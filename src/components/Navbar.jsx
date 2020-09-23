@@ -7,14 +7,12 @@ import Login from './About_Us/Login';
 
 
 class Navbar extends Component {
-    constructor(props) {
-        super();
-        this.state = {
-            isTop: true,
-            loggedIn: false
-        }
-    }
-    
+    state = {
+        isTop: true,
+        loggedIn: false,
+        selected: 'home' 
+    };
+
     componentDidMount() {
         document.addEventListener('scroll', () => {
             const isTop = window.scrollY < 100;
@@ -24,7 +22,21 @@ class Navbar extends Component {
         });
     }
 
-    render() {  
+    clickBold = (e) =>
+    {
+        console.log(e);
+        var current = document.getElementsByClassName("active");
+        console.log(current);
+        if(current != []) {
+            current[0].className = current[0].className.replace(" active", "");
+        }
+
+        var next = document.getElementById(e);
+        next.classList.add("active");
+        
+    }
+
+    render() {
         return (
             <div>
                 <Login />
@@ -44,14 +56,14 @@ class Navbar extends Component {
                                 </li>
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" href="#" id="aboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         ABOUT US
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section">From the CEO</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#clients">Clients</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#partners">Partners</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#contractVehicles">Contract Vehicles</a></li>
+                                    <ul className="dropdown-menu" aria-labelledby="aboutUs">
+                                        <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section" onClick={() => this.clickBold('aboutUs')}>From the CEO</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#clients" onClick={() => this.clickBold('aboutUs')}>Clients</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#partners" onClick={() => this.clickBold('aboutUs')}>Partners</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#contractVehicles" onClick={() => this.clickBold('aboutUs')}>Contract Vehicles</a></li>
                                         {/* <li><a className="dropdown-item" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal">Login</a></li> */}
                                     </ul>
                                 </li>
@@ -73,31 +85,31 @@ class Navbar extends Component {
                                 </li> */}
 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" id="services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         SERVICES
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">    
-                                        <li><a className="dropdown-item" href="/services/#program-support">Program Support</a></li>
-                                        <li><a className="dropdown-item" href="/services/#engineering">Engineering</a></li>
-                                        <li><a className="dropdown-item" href="/services/#business-intelligence">Business Intelligence</a></li>
+                                    <ul className="dropdown-menu" aria-labelledby="services">    
+                                        <li><a className="dropdown-item" href="/services/#program-support" onClick={() => this.clickBold('services')}>Program Support</a></li>
+                                        <li><a className="dropdown-item" href="/services/#engineering" onClick={() => this.clickBold('services')}>Engineering</a></li>
+                                        <li><a className="dropdown-item" href="/services/#business-intelligence" onClick={() => this.clickBold('services')}>Business Intelligence</a></li>
                                     </ul>
                                 </li>
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" id="training" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         TRAINING
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">    
+                                    <ul className="dropdown-menu" aria-labelledby="training">    
                                         <a className="dropdown-item" href="/training/#assessment-training">Assessment Training</a>
                                         <a className="dropdown-item" href="/training/#customer-training">Customer Training</a>
                                     </ul>
                                 </li>
                             
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" href="#" id="resources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Resources
                                     </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div className="dropdown-menu" aria-labelledby="resources">
                                         <a className="dropdown-item" href="#">Action</a>
                                         <a className="dropdown-item" href="#">Another action</a>
                                         <div className="dropdown-divider"></div>
@@ -106,10 +118,10 @@ class Navbar extends Component {
                                 </li>
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" id="joinUs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         JOIN US
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <ul className="dropdown-menu" aria-labelledby="joinUs">
                                         <a className="dropdown-item" href="/join-us/#we-are-together">We are together</a>
                                         <a className="dropdown-item" href="/join-us/#benefits">Benefits</a>
                                         <a className="dropdown-item" href="/join-us/#current-openings">Current Openings</a>
@@ -118,13 +130,18 @@ class Navbar extends Component {
                                 </li>
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" id="contactUs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         CONTACT US
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <ul className="dropdown-menu" aria-labelledby="contactUs">
                                         <a className="dropdown-item" href="/contact-us">Contact Us</a>
                                     </ul>
                                 </li>
+
+                                <li className="nav-item">
+                            <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
+                                </li>
+    
                             </ul>
                             {/*  Login button */}
                             <form className="form-inline my-2 my-lg-0">
