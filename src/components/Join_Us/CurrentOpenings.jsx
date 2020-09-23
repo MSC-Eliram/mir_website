@@ -15,7 +15,14 @@ class CurrentOpenings extends Component {
                 <h1 className="display-4 text-primary aboutUs-sections" id="current-openings">CURRENT OPENINGS</h1>
 
                 <br />
-                <br />
+                {/* <br />
+                <div id="BambooHR">
+                    <script src="https://mirlogic.bamboohr.com/js/jobs2.php" type="text/javascript">
+                    </script>
+                    
+                    <div id="BambooHR-Footer">Powered by<a href="http://www.bamboohr.com" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://resources.bamboohr.com/images/footer-logo.png" alt="BambooHR - HR software"/></a>
+                    </div>
+                </div> */}
 
                 <OpeningsList />
 

@@ -30,7 +30,7 @@ const GSA8 = () => {
             <br />
 
             <div className="section">
-                <h6>FUNCTIONAL AREA 1 â€“ NAICS 541511 â€“ CUSTOM COMPUTER PROGRAMMING SERVICES</h6>
+                <h6>FUNCTIONAL AREA 1 (NAICS 541511) CUSTOM COMPUTER PROGRAMMING SERVICES</h6>
                 
                 <br />
 
@@ -49,7 +49,7 @@ const GSA8 = () => {
                 <br />
             </div>
             <div className="section">
-                <h6>FUNCTIONAL AREA 2 â€“ NAICS 541512 â€“ COMPUTER SYSTEMS DESIGN SERVICES</h6>
+                <h6>FUNCTIONAL AREA 2 (NAICS 541512) COMPUTER SYSTEMS DESIGN SERVICES</h6>
 
                 <br />
 
@@ -77,7 +77,7 @@ const GSA8 = () => {
                 <br />
             </div>
             <div className="section">
-                <h6>FUNCTIONAL AREA 3 â€“ NAICS 541513 â€“ COMPUTER FACILITIES MANAGEMENT SERVICES</h6>
+                <h6>FUNCTIONAL AREA 3 (NAICS 541513) COMPUTER FACILITIES MANAGEMENT SERVICES</h6>
 
                 <br />
 
@@ -96,7 +96,7 @@ const GSA8 = () => {
                 <br />
             </div>
             <div className="section">
-                <h6>FUNCTIONAL AREA 4 â€“ NAICS 541519 â€“ OTHER COMPUTER RELATED SERVICES</h6>
+                <h6>FUNCTIONAL AREA 4 (NAICS 541519) OTHER COMPUTER RELATED SERVICES</h6>
 
                 <br />
 

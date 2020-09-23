@@ -97,7 +97,7 @@ class Navbar extends Component {
                                     </ul>
                                 </li>
                                 
-                                <li className="nav-item dropdown">
+                                {/* <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" id="training" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         TRAINING
                                     </a>
@@ -117,7 +117,7 @@ class Navbar extends Component {
                                         <div className="dropdown-divider"></div>
                                         <a className="dropdown-item" href="#">Something else here</a>
                                     </div>
-                                </li>
+                                </li> */}
                                 
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" id="joinUs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
