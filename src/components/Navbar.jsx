@@ -26,6 +26,8 @@ class Navbar extends Component {
     {
         console.log(e);
         var current = document.getElementsByClassName("active");
+        this.setState({selected: e});
+        console.log(this.state.selected);
         console.log(current);
         if(current != []) {
             current[0].className = current[0].className.replace(" active", "");
