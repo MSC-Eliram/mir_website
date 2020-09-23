@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from 'react-uuid';
 
 class CreateOpeningForm extends Component {
     constructor(props) {
@@ -7,7 +8,7 @@ class CreateOpeningForm extends Component {
             title: "",
             location: "",
             type: "",
-            full_description: ""
+            link: ""
         }
     }
 
@@ -18,9 +19,17 @@ class CreateOpeningForm extends Component {
         });
     }
 
-    clear = () => {
-        console.log("Clear ME!");
-        this.setState({title: "", location: "", type: "", full_description: ""});
+    // Cleaning form inputs after click X
+    clearForm = () => {
+        this.setState({title: "", location: "", type: "", link: ""});
+    }
+
+    // Submit the form 
+    handleSubmit = (evt) => {
+        evt.preventDefault();
+        // Calling the createNewOpening form OpeningsList component (passed as props).
+        this.props.createOpening({ ...this.state, id: uuid(), filled: false });
+        this.setState({title: "", location: "", type: "", link: ""});
     }
 
     render() { 
@@ -34,12 +43,12 @@ class CreateOpeningForm extends Component {
                         <div className="modal-content">
                             <div className="modal-header">
                                 <h4 className="modal-title" id="exampleModalLabel">Create new position</h4>
-                                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                <button type="button" className="close" data-dismiss="modal" aria-label="Close" onClick={this.clearForm}>
+                                    <span aria-hidden="true"><strong>&times;</strong></span>
                                 </button>
                             </div>
                             <div className="modal-body">
-                                <form>
+                                <form onSubmit={this.handleSubmit}>
                                     <div className="form-group">
                                         {/* Job description */}
                                         <label htmlFor="title">Job Title</label>
@@ -72,21 +81,20 @@ class CreateOpeningForm extends Component {
                                             </div>
                                         </div>
 
-                                        {/* Full description */}
-                                        <label htmlFor="full_description">Job Description</label>
-                                        <textarea className="form-control mb-3"
-                                            id="full_description"
-                                            rows="6"
-                                            value={this.state.full_description}
-                                            name="full_description"
+                                        {/* Link to bambooHR */}
+                                        <label htmlFor="link">Link</label>
+                                        <input className="form-control mb-3"
+                                            type="text"
+                                            value={this.state.link}
+                                            name="link"
                                             onChange={this.handleChange}
-                                        />
+                                        /> 
                                     </div>
                                
                                     {/* Buttons */}
                                     <div className="modal-footer">
-                                        <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={this.clear}>Cancel</button>
-                                        <button type="button" className="btn btn-primary">Create</button>
+                                        {/* <button type="button" className="btn btn-secondary" data-dismiss="modal" >Cancel</button> */}
+                                        <button type="submit" className="btn btn-primary">Create</button>
                                     </div>
                                 </form>
                             </div>
@@ -99,3 +107,42 @@ class CreateOpeningForm extends Component {
 }
  
 export default CreateOpeningForm;
+// class NewTodoForm extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = { 
+//             task: ''
+//         }
+//     }
+
+//     handleChange = (evt) => {
+//         this.setState({
+//             [evt.target.name]: evt.target.value
+//         });
+//     }
+
+//     handleSubmit = (evt) => {
+//         evt.preventDefault();
+//         // Calling the create(), method that passed down to here that add the new task in the state to the TodoList 
+//         this.props.createTodo({...this.state, id: uuid(), completed: false});
+//         this.setState({task: ''});
+//     }
+
+//     render() { 
+//         return ( 
+//             <div className="newTodoForm">
+//                 <form onSubmit={this.handleSubmit}>
+//                     <label htmlFor="task">New Task: </label>
+//                     <input type="text"
+//                         name="task"
+//                         placeholder="Add new task"
+//                         id="task"
+//                         value={this.state.task}
+//                         onChange={this.handleChange}
+//                     />
+//                     <button>+ Add</button>
+//                 </form>
+//             </div>
+//         );
+//     }
+// }

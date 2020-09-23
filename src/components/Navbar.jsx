@@ -138,9 +138,9 @@ class Navbar extends Component {
                                     </ul>
                                 </li>
 
-                                <li className="nav-item">
-                            <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
-                                </li>
+                                {/* <li className="nav-item">
+                                    <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
+                                </li> */}
     
                             </ul>
                             {/*  Login button */}
