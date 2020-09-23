@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { render } from 'react-dom'
+// import { NavLink, Link } from 'react-router-dom';
 
 import logo from '../logo.png'
 import './Navbar.css';
@@ -18,7 +18,7 @@ class Navbar extends Component {
             const isTop = window.scrollY < 100;
             if (isTop !== this.state.isTop) {
                 this.setState({ isTop })
-            }
+            } 
         });
     }
 
@@ -140,11 +140,15 @@ class Navbar extends Component {
                                     </ul>
                                 </li>
 
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                             <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
-                                </li>
+                                </li> */}
     
                             </ul>
+                            {/*  Login button */}
+                            <form className="form-inline my-2 my-lg-0">
+                                <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
+                            </form>
                         </div>
                 </nav>
             </div>
