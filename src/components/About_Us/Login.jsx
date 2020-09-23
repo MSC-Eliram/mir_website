@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { auth } from '../../firebase';
 
 import shield from '../../shield.png'
 
@@ -10,6 +11,13 @@ class Login extends Component {
             password: ""
         }
     }
+
+    // signInWithEmailAndPasswordHandler = (event, email, password) => {
+    //     event.preventDefault();
+    //     auth.signInWithEmailAndPassword(email, password).catch(error => {
+    //         console.error("Error signing in with password and email!");
+    //     });
+    // };
 
     // Update the job info in the state
     handleChange = (evt) => {
