@@ -62,7 +62,7 @@ class TodoList extends Component {
                 <h2>
                     Todo List<span> A Simple React Todo List App</span>
                 </h2>
-                {Array.isArray(this.state.todos) && this.state.todos.length === 0 ? 
+       
                                                       "Do something lazy butt!" : 
                                                       <ul>{todos}</ul>
                 }

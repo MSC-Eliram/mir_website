@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CreateOpeningForm from './CreateOpeningForm';
 import TodoList from './TodoList';
+import JobOpen from './JobOpen';
 
 class OpeningsList extends Component {
     constructor(props) {
@@ -10,36 +11,33 @@ class OpeningsList extends Component {
         }
     }
 
-    createNewOpening = () => {
-        this.setState({ ...this.state.openings });
+    createNewOpening = (newOpening) => {
+        this.setState({ 
+            openings: [...this.state.openings, newOpening] 
+        })
     }
 
 
     render() { 
-        // const openings = this.state.openings.map(opening => {
-        //     return (<div 
-        //         key={opening.id}
-        //         id={opening.id}
-        //         // opening={opening.}
 
-        //     />);
-        // });
+        const openings = this.state.openings.map(opening => {
+            return( <JobOpen key={opening.id}
+                             id={opening.id}
+                             title={opening.title}
+                             location={opening.location}
+                             type={opening.type}
+                             link={opening.link}
+                             full_description={opening.full_description}
+                    />
+                );
+        });
 
         return ( 
             <div>
-            {/* The Section Below (ending with the </p>) should be added in every time the "create" button is clicked */}
+                {Array.isArray(this.state.openings) && this.state.openings.length === 0 ? "NO OPENINGS AT THIS TIME" : <ul>{openings}</ul>}
                 <br />
                 <br />
-                <h2>List</h2>
-                {Array.isArray(this.state.openings) && this.state.openings.length === 0 ? "NO OPENINGS THIS TIME" : <ul></ul>}
                 <CreateOpeningForm createOpening={this.createNewOpening} />
-                <TodoList />
-                {/* <p id={"job" + CreateOpeningForm.state.title[word1] + "_" + CreateOpeningForm.state.title[word2]} style= {{ width: "500px"}}>
-                    <strong><a href={CurrentOpeningForm.state.link}>{CurrentOpeningForm.state.title}</a></strong><br />
-                    <em>{CurrentOpeningForm.state.location} + " - " + {CurrentOpeningForm.state.type}</em><br />
-                    {CurrentOpeningForm.state.full_description}
-                </p> */}
-                {/* End Section */} 
                 </div>
         );
     }

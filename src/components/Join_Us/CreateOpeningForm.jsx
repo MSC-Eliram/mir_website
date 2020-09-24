@@ -8,7 +8,8 @@ class CreateOpeningForm extends Component {
             title: "",
             location: "",
             type: "",
-            link: ""
+            link: "",
+            full_description: ""
         }
     }
 
@@ -21,7 +22,7 @@ class CreateOpeningForm extends Component {
 
     // Cleaning form inputs after click X
     clearForm = () => {
-        this.setState({title: "", location: "", type: "", link: ""});
+        this.setState({title: "", location: "", type: "", link: "", full_description: ""});
     }
 
     // Submit the form 
@@ -29,7 +30,7 @@ class CreateOpeningForm extends Component {
         evt.preventDefault();
         // Calling the createNewOpening form OpeningsList component (passed as props).
         this.props.createOpening({ ...this.state, id: uuid(), filled: false });
-        this.setState({title: "", location: "", type: "", link: ""});
+        this.setState({title: "", location: "", type: "", link: "", full_description: ""});
     }
 
     render() { 
@@ -87,6 +88,14 @@ class CreateOpeningForm extends Component {
                                             type="text"
                                             value={this.state.link}
                                             name="link"
+                                            onChange={this.handleChange}
+                                        /> 
+                                        {/* Link to bambooHR */}
+                                        <label htmlFor="full_description">Brief Job Description</label>
+                                        <input className="form-control mb-3"
+                                            type="text"
+                                            value={this.state.full_description}
+                                            name="full_description"
                                             onChange={this.handleChange}
                                         /> 
                                     </div>

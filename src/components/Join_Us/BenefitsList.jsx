@@ -36,14 +36,14 @@ class BenefitsList extends Component {
             {
                 id: 5,
                 img: "https://www.flaticon.com/svg/static/icons/svg/1518/1518634.svg",
-                title: "LIFE INSURANCES",
-                text: "We pay 100% for our employees.."
+                title: "LIFE INSURANCE",
+                text: "We pay 100% for our employees."
             },
             {
                 id: 6,
                 img: "https://www.flaticon.com/svg/static/icons/svg/784/784713.svg",
                 title: "401K",
-                text: "We provides 401 access, usage and creation."
+                text: "We provide 401 access, usage and creation."
             }
         ]
     }
