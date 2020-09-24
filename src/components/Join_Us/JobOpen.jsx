@@ -41,12 +41,21 @@ class JobOpen extends Component {
     render() { 
         return (
             <div className = "jobOpen">
-                <p id={"job_" + this.props.id} style={{width: "500px"}}>
+                {/* <p id={"job_" + this.props.id} style={{width: "500px"}}>
                     <strong><a href={this.props.link} target="_blank">{this.props.title}</a></strong><br />
                     <em>{this.props.location} - {this.props.type}</em><br />
                     {this.props.full_description}
-                </p>
-            </div>
+                </p> */}
+
+                <div className="row align-items-end mb-3" style={{ border: "1px #333 solid" }}>
+                    <div className="col-sm-9">
+                        <h5>{this.props.title}</h5>
+                        <em>{this.props.location} | {this.props.type}</em><br />
+                        <p className="lead">{this.props.full_description}</p>
+                    </div>
+                    <div className="col-sm-3 bg-info text-right" style={{border:"1px solid #333"}}>{this.props.location}</div>
+                </div>
+            </div>  
         )
     }
 }
