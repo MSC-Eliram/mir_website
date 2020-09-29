@@ -6,7 +6,8 @@ const OpeningsList = () => {
     const [currentTime, setCurrentTime] = useState(0);
 
     useEffect(() => {
-        fetch('http://127.0.0.1:5000/time', {mode: 'no-cors'}).then(res => res.json()).then(data => {setCurrentTime(data.time);});}, []);
+        fetch('http://127.0.0.1:5000/time').then(res => res.json()).then(data => {setCurrentTime(data.time);});
+        fetch('http://127.0.0.1:5000/job_postings').then(res => res.json()).then(data => {console.log(data);});}, []);
 
     console.log(currentTime)
     return(

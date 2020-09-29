@@ -18,21 +18,22 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-app.config.from_object("config")
-app.config['CORS_HEADERS'] = 'Content-Type'
+#app.config.from_object("config")
+#app.config['CORS_HEADERS'] = 'Content-Type'
+
 
 @app.route('/')
-@cross_origin(origin="http://127.0.0.1:3000")
+#@cross_origin(origin="http://127.0.0.1:3000")
 def you_man():
     return "fuck you man."
 
 @app.route('/time')
-@cross_origin(origin="http://127.0.0.1:3000")
+#@cross_origin(origin="http://127.0.0.1:3000")
 def get_current_time():
     return {'time': time.time()}
 
 @app.route('/job_postings')
-@cross_origin(origin="http://127.0.0.1:3000")
+#@cross_origin(origin="http://127.0.0.1:3000")
 def get_job_postings():
     PROJECT_ROOT = os.path.dirname(os.path.realpath('__file__'))
     DRIVER_BIN = os.path.join(PROJECT_ROOT, "C:/bin/chromedriver")
@@ -89,4 +90,4 @@ def get_job_postings():
 
 
 if __name__== '__main__':
-    app.run(host='127.0.0.1', port='5000', debug=True)
+    app.run(host='127.0.0.1', port='5000')
