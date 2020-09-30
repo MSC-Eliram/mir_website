@@ -1,11 +1,13 @@
 import React from 'react'
+import Carousel from './Carousel';
 
 import './Home.css';
 
 const Home = () => {
     return (
-        <div className="Home d-flex align-items-center">
-            <div className="textCenterBox py-2 px-4 item text-center" style={{  backgroundColor: "rgba(255, 255, 255, 0.7", margin: "0 auto" }}>
+        <div className="Home d-flex align-items-center row">
+            <Carousel />
+            <div className="textCenterBox py-2 px-4 item text-center"> 
                 <span><h1 className="textCenter display-4 text-primary">SUCCESS THROUGH DEDICATION & EXECUTION</h1></span>
                 <div>
                     <a href="/about-us/#fromTheCEO-section"><button className="btn btnn-lg btn-outline-primary mt-4">LEARN MORE</button></a>

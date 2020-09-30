@@ -14,21 +14,21 @@ class HomeMiniCards extends Component {
                 img: "https://image.flaticon.com/icons/svg/850/850316.svg",
                 text: "PROGRAM SUPPORT SERVICES" 
             }, 
-            {
-                id: 3, 
-                img: "https://image.flaticon.com/icons/svg/492/492619.svg",
-                text: "CYBER ASSESSMENT SERVICES"
-            },
+            // {
+            //     id: 3, 
+            //     img: "https://image.flaticon.com/icons/svg/492/492619.svg",
+            //     text: "CYBER ASSESSMENT SERVICES"
+            // },
             {
                 id: 4, 
                 img: "https://image.flaticon.com/icons/svg/104/104941.svg",
                 text: "SOLUTION DEVELOPMENT SERVICES"
-            },
-            {
-                id: 5, 
-                img: "https://image.flaticon.com/icons/svg/2666/2666405.svg",
-                text: "CERTIFICATION TRAINING"
             }
+            // {
+            //     id: 5, 
+            //     img: "https://image.flaticon.com/icons/svg/2666/2666405.svg",
+            //     text: "CERTIFICATION TRAINING"
+            // }
         ]
     }
 
@@ -41,7 +41,7 @@ class HomeMiniCards extends Component {
             <div className="col-sm mt-4" key={card.id}>
                 <div className="text-dark text-center">
                     <p className="text-primary">{card.text}</p>
-                    <img src={card.img} alt="image" style={{ width: "25%", marginBottom: "0.7rem" }} />
+                    <img src={card.img} alt="image" style={{ width: "20%", marginBottom: "0.7rem" }} />
                     <div>
                         <button className="btn btn-outline-primary align-items-center mb-2">
                             Explore
@@ -54,7 +54,7 @@ class HomeMiniCards extends Component {
         ))
         return ( 
             <div className="homeCards mb-4">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row align-items-center">
                         {list}
                     </div>
