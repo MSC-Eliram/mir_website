@@ -20,25 +20,28 @@ class Navbar extends Component {
                 this.setState({ isTop })
             } 
         });
+        this.clickBold();
     }
 
-    clickBold = (e) =>
-    {
+    changeActive = (e) => {
         console.log(e);
+        this.setState({selected: e}, this.clickBold);
+    }
+         
+    clickBold = () => {
         var current = document.getElementsByClassName("active");
-        this.setState({selected: e});
-        console.log(this.state);
         console.log(current);
-        if(current != []) {
+        if(current.length >= 1) {
             current[0].className = current[0].className.replace(" active", "");
         }
 
-        var next = document.getElementById(e);
+        console.log(this.state);
+        var next = document.getElementById(this.state.selected);
         next.classList.add("active");
-        
     }
 
     render() {
+        console.log("loading");
         return (
             <div>
                 <Login />
@@ -53,8 +56,8 @@ class Navbar extends Component {
     
                         <div className="collapse navbar-collapse ml-md-4" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
-                                <li className="nav-item active">
-                                    <a className="nav-link" href="/home">HOME<span className="sr-only">(current)</span></a>
+                                <li className="nav-item" id="home">
+                                    <a className="nav-link" href="/home" onClick={() => this.changeActive('home')}>HOME<span className="sr-only">(current)</span></a>
                                 </li>
                                 
                                 <li className="nav-item dropdown">
@@ -62,10 +65,10 @@ class Navbar extends Component {
                                         ABOUT US
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="aboutUs">
-                                        <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section" onClick={() => this.clickBold('aboutUs')}>From the CEO</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#clients" onClick={() => this.clickBold('aboutUs')}>Clients</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#partners" onClick={() => this.clickBold('aboutUs')}>Partners</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#contractVehicles" onClick={() => this.clickBold('aboutUs')}>Contract Vehicles</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section" onClick={() => this.changeActive('aboutUs')}>From the CEO</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#clients" onClick={() => this.changeActive('aboutUs')}>Clients</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#partners" onClick={() => this.changeActive('aboutUs')}>Partners</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#contractVehicles" onClick={() => this.changeActive('aboutUs')}>Contract Vehicles</a></li>
                                         {/* <li><a className="dropdown-item" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal">Login</a></li> */}
                                     </ul>
                                 </li>
@@ -91,9 +94,9 @@ class Navbar extends Component {
                                         SERVICES
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="services">    
-                                        <li><a className="dropdown-item" href="/services/#program-support" onClick={() => this.clickBold('services')}>Program Support</a></li>
-                                        <li><a className="dropdown-item" href="/services/#engineering" onClick={() => this.clickBold('services')}>Engineering</a></li>
-                                        <li><a className="dropdown-item" href="/services/#business-intelligence" onClick={() => this.clickBold('services')}>Business Intelligence</a></li>
+                                        <li><a className="dropdown-item" href="/services/#program-support" onClick={() => this.changeActive('services')}>Program Support</a></li>
+                                        <li><a className="dropdown-item" href="/services/#engineering" onClick={() => this.changeActive('services')}>Engineering</a></li>
+                                        <li><a className="dropdown-item" href="/services/#business-intelligence" onClick={() => this.changeActive('services')}>Business Intelligence</a></li>
                                     </ul>
                                 </li>
                                 
@@ -124,10 +127,10 @@ class Navbar extends Component {
                                         JOIN US
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="joinUs">
-                                        <a className="dropdown-item" href="/join-us/#we-are-together">We are together</a>
-                                        <a className="dropdown-item" href="/join-us/#benefits">Benefits</a>
-                                        <a className="dropdown-item" href="/join-us/#current-openings">Current Openings</a>
-                                        <a className="dropdown-item" href="/join-us/#">Apply</a>
+                                        <a className="dropdown-item" href="/join-us/#we-are-together" onClick={() => this.changeActive('joinUs')}>We are together</a>
+                                        <a className="dropdown-item" href="/join-us/#benefits" onClick={() => this.changeActive('joinUs')}>Benefits</a>
+                                        <a className="dropdown-item" href="/join-us/#current-openings" onClick={() => this.changeActive('joinUs')}>Current Openings</a>
+                                        <a className="dropdown-item" href="/join-us/#" onClick={() => this.changeActive('joinUs')}>Apply</a>
                                     </ul>
                                 </li>
                                 
@@ -136,7 +139,7 @@ class Navbar extends Component {
                                         CONTACT US
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="contactUs">
-                                        <a className="dropdown-item" href="/contact-us">Contact Us</a>
+                                        <a className="dropdown-item" href="/contact-us" onClick={() => this.changeActive('contactUs')}>Contact Us</a>
                                     </ul>
                                 </li>
 

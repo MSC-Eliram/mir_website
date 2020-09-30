@@ -50,10 +50,13 @@ class JobOpen extends Component {
                 <div className="row align-items-end mb-3" style={{ border: "1px #333 solid" }}>
                     <div className="col-sm-9">
                         <h5>{this.props.title}</h5>
-                        <em>{this.props.location} | {this.props.type}</em><br />
-                        <p className="lead">{this.props.full_description}</p>
+                        <em>{this.props.location} | {this.props.location2}</em><br />
+                        <p className="lead">{this.props.link}</p>
+                        <p className="type">{this.props.type} | {this.props.type2}</p>
                     </div>
-                    <div className="col-sm-3 bg-info text-right" style={{border:"1px solid #333"}}>{this.props.location}</div>
+                    <div className="col-sm-3 bg-info text-right" style={{border:"1px solid #333"}}>
+                        <a href={this.props.link} target="_blank"><button>Apply</button></a>
+                    </div>
                 </div>
             </div>  
         )

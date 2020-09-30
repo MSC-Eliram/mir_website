@@ -84,7 +84,7 @@ class CreateOpeningForm extends Component {
 
                                         {/* Link to bambooHR */}
                                         <label htmlFor="link">Link</label>
-                                        <input className="form-control mb-3"
+                                        <input className="form-control"
                                             type="text"
                                             value={this.state.link}
                                             name="link"
@@ -92,7 +92,7 @@ class CreateOpeningForm extends Component {
                                         /> 
                                         {/* Link to bambooHR */}
                                         <label htmlFor="full_description">Brief Job Description</label>
-                                        <input className="form-control mb-3"
+                                        <textarea className="form-control" rows="3"
                                             type="text"
                                             value={this.state.full_description}
                                             name="full_description"
