@@ -1,12 +1,20 @@
-.Home {
-    background: url(../../../images/hill.jpg) no-repeat center center;
+/* .Home {
+    background: url(../../../images/hill1.png) no-repeat center center;
     background-size: cover;
-    height: 100vh;
-}
+    height: 90vh;
+} */
 
-.textCenterBox {
-    width: 40%;
-}
+/* .imgDispaly {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+} */
+
+
+
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -18,7 +26,7 @@
     }
     .lead {
         font-size: 0.8rem;
-    }
+    }       
 }
 
 @media only screen and (min-device-width : 481px) and (max-device-width : 765px) {
