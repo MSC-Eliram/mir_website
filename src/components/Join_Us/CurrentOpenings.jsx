@@ -12,21 +12,24 @@ class CurrentOpenings extends Component {
     render() { 
         return ( 
             <div>
+                <h1 className="display-4">JOIN OUR TEAM OF SPECIALISTS</h1>
+
+                <br />
+
+                <p>
+                    <span><strong><a href="/">Apply for a position</a></strong></span> and help others develop solutions that help us all. 
+                    We make all of our employment positions without any regard to race, color, religion, sex, national origin, age, disability, 
+                    or genetic information. That commitment helps us find people that are focused on helping people succeed. We are in this together, 
+                    so we do everything we can to find people that share our values. We are proud of the talented and diverse group of employees
+                    we have assembled, and we look forward to working with you.
+                </p>
+
+                <br />
+                <br />
+                
+                
                 <h1 className="display-4 text-primary aboutUs-sections" id="current-openings">CURRENT OPENINGS</h1>
 
-                <br />
-                {/* <br />
-                <div id="BambooHR">
-                    <script src="https://mirlogic.bamboohr.com/js/jobs2.php" type="text/javascript">
-                    </script>
-                    
-                    <div id="BambooHR-Footer">Powered by<a href="http://www.bamboohr.com" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://resources.bamboohr.com/images/footer-logo.png" alt="BambooHR - HR software"/></a>
-                    </div>
-                </div> */}
-
-                <OpeningsList />
-
-                <br />
                 <br />
 
                 <p>
@@ -43,20 +46,7 @@ class CurrentOpenings extends Component {
                     our corporation a leader in this field. We are dedicated to maintaining equal employment opportunities for everyone.
                 </p>
 
-                <br />
-                <br />
-
-                <h1 className="display-4">JOIN OUR TEAM OF SPECIALISTS</h1>
-
-                <br />
-
-                <p>
-                    <span><strong><a href="/">Apply for a position</a></strong></span> and help others develop solutions that help us all. 
-                    We make all of our employment positions without any regard to race, color, religion, sex, national origin, age, disability, 
-                    or genetic information. That commitment helps us find people that are focused on helping people succeed. We are in this together, 
-                    so we do everything we can to find people that share our values. We are proud of the talented and diverse group of employees
-                    we have assembled, and we look forward to working with you.
-                </p>
+                <OpeningsList />
 
                 <br />
                 <br />

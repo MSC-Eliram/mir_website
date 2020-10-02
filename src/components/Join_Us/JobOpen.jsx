@@ -47,17 +47,21 @@ class JobOpen extends Component {
                     {this.props.full_description}
                 </p> */}
 
-                <div className="row align-items-end mb-3" style={{ border: "1px #333 solid" }}>
-                    <div className="col-sm-9">
+                {/* style={{ border: "1px #333 solid" }}> */}
+                <div className="row align-items-center mt-4" >
+                    <div className="col-sm-10 col-md-9">
                         <h5>{this.props.title}</h5>
                         <em>{this.props.location} | {this.props.location2}</em><br />
-                        <p className="lead">{this.props.link}</p>
-                        <p className="type">{this.props.type} | {this.props.type2}</p>
+                        <a href={this.props.link} target="_blank"><p className="">Full Description</p></a>
+                        <p className="type">{this.props.type} - {this.props.type2}</p>
                     </div>
-                    <div className="col-sm-3 bg-info text-right" style={{border:"1px solid #333"}}>
-                        <a href={this.props.link} target="_blank"><button>Apply</button></a>
+                    <div className="col-sm-10 col-md-3 text-md-right text-sm-left">
+                        <a href={this.props.link} target="_blank">
+                            <button type="button" className="btn btn-primary w-50">Apply</button>
+                        </a>
                     </div>
                 </div>
+                <hr />
             </div>  
         )
     }
