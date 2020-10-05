@@ -1,18 +1,21 @@
-// import firebase from "firebase/app";
-// import "firebase/auth";
-// import "firebase/firestore";
+import firebase from "firebase/app";
+import firebase from 'firebase;'
+import "firebase/auth";
+import "firebase/firestore";
 
-// const firebaseConfig = {
-//     apiKey: 'AIzaSyC11JbIFO30Ang1mwrRURYREKx0KB3WTxY',
-//     authDomain: 'fir-mirlogic-website.firebaseapp.com',
-//     databaseURL: 'https://fir-mirlogic-website.firebaseio.com',
-//     projectId: 'fir-mirlogic-website',
-//     storageBucket: 'fir-mirlogic-website.appspot.com',
-//     messagingSenderId: '484972206279',
-//     appId: '1:484972206279:web:925d2275361c03e86946e2'
-// };
+const firebaseConfig = {
+    apiKey: "AIzaSyAk_4jW-QbYSn4YYQ14U0NjTXwq6NQz4Q0",
+    authDomain: "mirlogic-login.firebaseapp.com",
+    databaseURL: "https://mirlogic-login.firebaseio.com",
+    projectId: "mirlogic-login",
+    storageBucket: "mirlogic-login.appspot.com",
+    messagingSenderId: "29050385339",
+    appId: "1:29050385339:web:2e4cad2eecdbc2fb1c4a9e",
+    measurementId: "G-T0F0T8S6FB"
+  };
 
-// firebase.initializeApp(firebaseConfig);
+const fire =  firebase.initializeApp(firebaseConfig);
+export default fire;
 // export const auth = firebase.auth();
 // export const firestore = firebase.firestore();
 

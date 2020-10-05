@@ -1,47 +1,70 @@
 import React, { Component } from 'react'
-// import { NavLink, Link } from 'react-router-dom';
 
 import logo from '../logo.png'
 import './Navbar.css';
 import Login from './About_Us/Login';
+// import { addUrlProps, UrlQueryParamTypes } from 'react-url-query';
 
+
+// function useQuery() {
+//     let thisAddress = new URLSearchParams(useLocation().search);
+//     console.log(thisAddress);
+//     return thisAddress;
+//   }
 
 class Navbar extends Component {
     state = {
         isTop: true,
         loggedIn: false,
-        selected: 'home' 
+        selected: 'home',
+        search: '---' 
     };
 
     componentDidMount() {
+        let currentURL = window.location.pathname;
+
+        currentURL = currentURL.slice(1);
+        if (currentURL.charAt(currentURL.length - 1) == '/') {
+            currentURL = currentURL.slice(0, -1);
+        }
+        if (currentURL == '') {
+            currentURL = 'home';
+        }
+
+        this.setState({search: currentURL},()=>{
+            let next = document.getElementById(this.state.search);
+            next.classList.add("active");
+        });
+
         document.addEventListener('scroll', () => {
             const isTop = window.scrollY < 100;
             if (isTop !== this.state.isTop) {
                 this.setState({ isTop })
             } 
         });
-        this.clickBold();
+        // this.clickBold();
     }
 
-    changeActive = (e) => {
-        console.log(e);
-        this.setState({selected: e}, this.clickBold);
-    }
+    // changeActive = (e) => {
+    //     console.log(e);
+    //     this.setState({selected: e}, this.clickBold);
+    // }
          
-    clickBold = () => {
-        var current = document.getElementsByClassName("active");
-        console.log(current);
-        if(current.length >= 1) {
-            current[0].className = current[0].className.replace(" active", "");
-        }
+    // clickBold = () => {
+    //     var current = document.getElementsByClassName("active");
+    //     console.log(current);
+    //     if(current.length >= 1) {
+    //         current[0].className = current[0].className.replace(" active", "");
+    //     }
 
-        console.log(this.state);
-        var next = document.getElementById(this.state.selected);
-        next.classList.add("active");
-    }
+    //     console.log(this.state);
+    //     // var next = document.getElementById(this.state.selected);
+    //     // next.classList.add("active");
+    // }
 
     render() {
-        console.log("loading");
+        // console.log(this.state.search);
+        // console.log("loading");
         return (
             <div>
                 <Login />
@@ -57,18 +80,18 @@ class Navbar extends Component {
                         <div className="collapse navbar-collapse ml-md-4" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item" id="home">
-                                    <a className="nav-link" href="/home" onClick={() => this.changeActive('home')}>HOME<span className="sr-only">(current)</span></a>
+                                    <a className="nav-link" href="/home">HOME<span className="sr-only">(current)</span></a>
                                 </li>
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="aboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" href="#" id="about-us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         ABOUT US
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="aboutUs">
-                                        <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section" onClick={() => this.changeActive('aboutUs')}>From the CEO</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#clients" onClick={() => this.changeActive('aboutUs')}>Clients</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#partners" onClick={() => this.changeActive('aboutUs')}>Partners</a></li>
-                                        <li><a className="dropdown-item" href="/about-us/#contractVehicles" onClick={() => this.changeActive('aboutUs')}>Contract Vehicles</a></li>
+                                    <ul className="dropdown-menu" aria-labelledby="about-us">
+                                        <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section">From the CEO</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#clients">Clients</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#partners">Partners</a></li>
+                                        <li><a className="dropdown-item" href="/about-us/#contractVehicles">Contract Vehicles</a></li>
                                         {/* <li><a className="dropdown-item" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal">Login</a></li> */}
                                     </ul>
                                 </li>
@@ -94,9 +117,9 @@ class Navbar extends Component {
                                         SERVICES
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="services">    
-                                        <li><a className="dropdown-item" href="/services/#program-support" onClick={() => this.changeActive('services')}>Program Support</a></li>
-                                        <li><a className="dropdown-item" href="/services/#engineering" onClick={() => this.changeActive('services')}>Engineering</a></li>
-                                        <li><a className="dropdown-item" href="/services/#business-intelligence" onClick={() => this.changeActive('services')}>Business Intelligence</a></li>
+                                        <li><a className="dropdown-item" href="/services/#program-support">Program Support</a></li>
+                                        <li><a className="dropdown-item" href="/services/#engineering">Engineering</a></li>
+                                        <li><a className="dropdown-item" href="/services/#business-intelligence">Business Intelligence</a></li>
                                     </ul>
                                 </li>
                                 
@@ -123,23 +146,24 @@ class Navbar extends Component {
                                 </li> */}
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" id="joinUs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" id="join-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         JOIN US
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="joinUs">
-                                        <a className="dropdown-item" href="/join-us/#we-are-together" onClick={() => this.changeActive('joinUs')}>We are together</a>
-                                        <a className="dropdown-item" href="/join-us/#benefits" onClick={() => this.changeActive('joinUs')}>Benefits</a>
-                                        <a className="dropdown-item" href="/join-us/#current-openings" onClick={() => this.changeActive('joinUs')}>Current Openings</a>
-                                        <a className="dropdown-item" href="/join-us/#" onClick={() => this.changeActive('joinUs')}>Apply</a>
+                                    <ul className="dropdown-menu" aria-labelledby="join-us">
+                                        <a className="dropdown-item" href="/join-us/#we-are-together">We are together</a>
+                                        <a className="dropdown-item" href="/join-us/#benefits">Benefits</a>
+                                        <a className="dropdown-item" href="/join-us/#current-openings">Current Openings</a>
+                                        <a className="dropdown-item" href="https://mirlogic.bamb
+                                        oohr.com/jobs/" target="_blank">Apply</a>
                                     </ul>
                                 </li>
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" id="contactUs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" id="contact-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         CONTACT US
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="contactUs">
-                                        <a className="dropdown-item" href="/contact-us" onClick={() => this.changeActive('contactUs')}>Contact Us</a>
+                                    <ul className="dropdown-menu" aria-labelledby="contact-us">
+                                        <a className="dropdown-item" href="/contact-us">Contact Us</a>
                                     </ul>
                                 </li>
 

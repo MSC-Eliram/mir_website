@@ -46,7 +46,7 @@ class OpeningsList extends Component {
             );
         });
         return ( 
-            <div  style={{ backgroundColor: "#f5f5f5", padding: "20px", borderRadius: "10px" }}>
+            <div  style={{ backgroundColor: "#f7f7f7", padding: "20px", borderRadius: "10px" }}>
                 {Array.isArray(this.state.openings) && this.state.openings.length === 0 ? "NO OPENINGS AT THIS TIME" : <span>{openings}</span>}
                 <div id="BambooHR">
                     <script src="https://mirlogic.bamboohr.com/js/jobs2.php" type="text/javascript">

@@ -26,11 +26,11 @@ const Carousel = () => {
             
         </div>
         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <i class="fas fa-chevron-left text-secondary" style={{ fontSize: "35px" }}></i>
+        <i className="fas fa-chevron-left text-secondary" style={{ fontSize: "35px" }}></i>
             <span className="sr-only bg-primaty">Previous</span>
         </a>
         <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <i class="fas fa-chevron-right text-secondary" style={{ fontSize: "35px" }}></i>
+            <i className="fas fa-chevron-right text-secondary" style={{ fontSize: "35px" }}></i>
             <span className="sr-only">Next</span>
         </a>
         </div>
