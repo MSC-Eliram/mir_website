@@ -5,12 +5,14 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div className="Home d-flex align-items-center row">
+        <div className="Home d-flex align-items-center">
             <Carousel />
             <div className="textCenterBox py-2 px-4 item text-center"> 
                 <span><h1 className="textCenter display-4 text-primary">SUCCESS THROUGH DEDICATION & EXECUTION</h1></span>
-                <div>
-                    <a href="/about-us/#fromTheCEO-section"><button className="btn btnn-lg btn-outline-primary mt-4">LEARN MORE</button></a>
+                <div className="button_section">
+                    <a href="/about-us/#fromTheCEO-section">
+                        <button className="btn btn-md btn-outline-primary mt-4">LEARN MORE</button>
+                    </a>
                 </div>
             </div>
         </div>

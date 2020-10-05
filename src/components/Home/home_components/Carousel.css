@@ -1,34 +1,26 @@
-.img1 {
-    background: url(../../../images/hill.jpg) no-repeat center center;
-    background-size: cover;
+.carousel-item {
     height: 100vh;
+    position: relative;
+    width: 100%;
 }
 
-.display2 {
-    background: url(../../../images/hill.jpg) no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-}
-
-.display2 {
-    background: url(../../../images/hill.jpg) no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-}
-
-
-
-.textCenterBox {
-    background-color: rgba(209, 121, 121, 0.7);
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    opacity: 0.8;
+.carousel-item img {
+    width: 100%;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    top:50%;
-    left: 50%;
-    transform: translate(-50% , -50% );
-    z-index: 5;
+    background-size: cover; 
+    height: 100%;
+} 
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .carousel-item {
+        height: 100%;
+    }      
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+    .carousel-item {
+        height: 100%;
+    }   
 }
 
