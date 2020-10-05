@@ -61,7 +61,7 @@ class HomeContact extends Component {
     render() {
         return (
             <div className="HomeContact py-4" style={{ height: "100%", margin: "4rem auto" }}>
-                <div className="container py-4">
+                <div className="container    py-4">
                     <div className="row align-items-center">
                         <div className="col-sm col-md-5 col-lg-6 text-center align-items-center" style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
                             <img src="https://image.flaticon.com/icons/svg/1034/1034146.svg" alt="email" style={{ width: "45%" }} />
