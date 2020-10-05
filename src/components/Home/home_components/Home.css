@@ -1,37 +1,42 @@
-/* .Home {
-    background: url(../../../images/hill1.png) no-repeat center center;
-    background-size: cover;
-    height: 90vh;
-} */
+.Home {
+    /* background: url(../../../images/hill1.png) no-repeat center center; */
+    /* background-size: cover; */
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color: rgba(161, 209, 161, 0.481);  */
+}
 
-/* .imgDispaly {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
-} */
-
-
-
-
+.textCenterBox {
+    background-color: rgba(255, 255, 255, 0.733);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .textCenterBox {
-        width: 100%;
+        width: 70%!important;
+        top: 18%;
     }
     .textCenter, .display-4  {
-        font-size: 1.5rem;
+        font-size: 1rem!important;
     }
     .lead {
         font-size: 0.8rem;
-    }       
+    } 
+    .button_section button {
+       font-size: 0.7rem;
+       padding: 4px;
+    }      
 }
 
 @media only screen and (min-device-width : 481px) and (max-device-width : 765px) {
     .textCenterBox {
-        width: 400px;
+        width: 350px;
+        top: 35%!important;
     }
     .textCenter, .display-4  {
         font-size: 1.5rem;
@@ -44,7 +49,8 @@
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .textCenterBox {
-        width: 450px;
+        width: 400px;
+        top: 25%;
     }
     .textCenter, .display-4  {
         font-size: 2rem;
@@ -55,7 +61,7 @@
 }
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1025px) {
+@media only screen  and (min-width : 1024px) {
     .textCenterBox {
         width: 550px;
     }
