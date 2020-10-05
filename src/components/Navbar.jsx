@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import logo from '../logo.png'
 import './Navbar.css';
@@ -130,7 +130,7 @@ class Navbar extends Component {
                                         <a className="dropdown-item" href="/join-us/#we-are-together" onClick={() => this.changeActive('joinUs')}>We are together</a>
                                         <a className="dropdown-item" href="/join-us/#benefits" onClick={() => this.changeActive('joinUs')}>Benefits</a>
                                         <a className="dropdown-item" href="/join-us/#current-openings" onClick={() => this.changeActive('joinUs')}>Current Openings</a>
-                                        <a className="dropdown-item" href="/join-us/#" onClick={() => this.changeActive('joinUs')}>Apply</a>
+                                        <a className="dropdown-item" href="https://mirlogic.bamoohr.com/jobs/" target="_blank" onClick={() => this.changeActive('joinUs')}>Apply</a>
                                     </ul>
                                 </li>
                                 

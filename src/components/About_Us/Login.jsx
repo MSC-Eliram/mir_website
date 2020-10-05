@@ -19,6 +19,11 @@ class Login extends Component {
     //     });
     // };
 
+    handleSubmit = (evt) => {
+        evt.preventDefault();
+        console.log("hi submit!");
+    }
+
     // Update the job info in the state
     handleChange = (evt) => {
         this.setState({
@@ -48,7 +53,7 @@ class Login extends Component {
                                 </button>
                             </div>
                             <div className="modal-body">
-                                <form>
+                                <form onSubmit={this.handleSubmit}>
                                     <div className="form-group">
                                         {/* User name */}
                                         <label htmlFor="username">Username</label>
@@ -61,7 +66,7 @@ class Login extends Component {
 
                                         {/* Password */}
                                         <label htmlFor="password">Password</label>
-                                        <input className="form-control mb-3"
+                                        <input className="form-control mb-4"
                                             type="password"
                                             value={this.state.password}
                                             name="password"
@@ -92,11 +97,19 @@ class Login extends Component {
                                         </div> */}
                                     </div>
 
+                                    <hr className="mb-4" />
+                                    
                                     {/* Buttons */}
-                                    <div className="modal-footer">
+                                    <div>
+                                        <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={this.clear}>Cancel</button>
+                                        <button className="btn btn-primary text-light float-right">Submit</button>
+                                    </div>
+                                    
+                                    
+                                    {/* <div className="modal-footer">
                                         <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={this.clear}>Cancel</button>
                                         <button type="button" className="btn btn-primary">Login</button>
-                                    </div>
+                                    </div> */}
                                 </form>
                             </div>
                         </div>
