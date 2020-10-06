@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Hill from '../../../images/hill.jpg';
-import Hill3 from '../../../images/hill3.png';
 
 import './Carousel.css'
 
