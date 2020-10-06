@@ -153,8 +153,7 @@ class Navbar extends Component {
                                         <a className="dropdown-item" href="/join-us/#we-are-together">We are together</a>
                                         <a className="dropdown-item" href="/join-us/#benefits">Benefits</a>
                                         <a className="dropdown-item" href="/join-us/#current-openings">Current Openings</a>
-                                        <a className="dropdown-item" href="https://mirlogic.bamb
-                                        oohr.com/jobs/" target="_blank">Apply</a>
+                                        <a className="dropdown-item" href="https://mirlogic.bamboohr.com/jobs/" target="_blank">Apply</a>
                                     </ul>
                                 </li>
                                 
