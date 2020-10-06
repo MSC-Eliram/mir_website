@@ -84,7 +84,7 @@ class Navbar extends Component {
                                 </li>
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="about-us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link" href="#" id="about-us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         ABOUT US
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="about-us">
@@ -113,7 +113,7 @@ class Navbar extends Component {
                                 </li> */}
 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" id="services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link" id="services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         SERVICES
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="services">    
@@ -146,20 +146,19 @@ class Navbar extends Component {
                                 </li> */}
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" id="join-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link" id="join-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         JOIN US
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="join-us">
                                         <a className="dropdown-item" href="/join-us/#we-are-together">We are together</a>
                                         <a className="dropdown-item" href="/join-us/#benefits">Benefits</a>
                                         <a className="dropdown-item" href="/join-us/#current-openings">Current Openings</a>
-                                        <a className="dropdown-item" href="https://mirlogic.bamb
-                                        oohr.com/jobs/" target="_blank">Apply</a>
+                                        <a className="dropdown-item" href="https://mirlogic.bamboohr.com/jobs/" target="_blank">Apply</a>
                                     </ul>
                                 </li>
                                 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" id="contact-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link" id="contact-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         CONTACT US
                                     </a>
                                     <ul className="dropdown-menu" aria-labelledby="contact-us">
@@ -174,7 +173,8 @@ class Navbar extends Component {
                             </ul>
                             {/*  Login button */}
                             <form className="form-inline my-2 my-lg-0">
-                                <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
+                                <a className="nav-link" href="https://netorgft998771.sharepoint.com/SitePages/Home.aspx " target="_blank" style={{ color: "#93111e"}}>LOGIN</a>
+                                {/* <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a> */}
                             </form>
                         </div>
                 </nav>
