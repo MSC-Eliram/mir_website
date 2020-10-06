@@ -21,6 +21,48 @@
     transition: ease-in 0.4s;
 }
 
+/* .nav-item .underLine {
+    text-decoration: none;
+    border: 5px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.underLine::after {
+    width: 0%;
+    height: 1px;
+    display: block;
+    background-color: #93111e;
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 50%;
+    transition: left 0.4s cubic-bezier(0.215, 0.610, 0.355 ,1),
+                width 0.4s cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+
+.nav-link:hover .underLine::after {
+    width: 100%;
+    top: 34px;
+    left: 0;
+} */
+
+.nav-link:hover {
+    border-bottom: 3px solid #93111e;
+    /* transition: ease-in 0.2s; */
+}
+
+.dropdown-item:hover {
+    border-left: 5px solid #93111e;
+    transition: ease-in 0.2s;
+    color: #93111e;
+}
+
 /* rotate caret on hover */
 .dropdown-menu > li > a::after {
     text-decoration: underline;
