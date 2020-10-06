@@ -1,34 +1,35 @@
 import React, { Component } from 'react';
 
+import './Footer.css';
 import logo from '../logo.png'
 
 class Footer extends Component {
     constructor(props) {
-        super(props);
+        super();
         this.state = { 
             year: new Date()
         }
     }
     
     render() { 
-        const ColoredLine = ({ color }) => (
-            <hr
-                style={{
-                    color: color,
-                    backgroundColor: color,
-                    height: 2,
-                    marginBottom: "3rem"
-                }}
-            />
-        )
+        // const ColoredLine = ({ color }) => (
+        //     <hr
+        //         style={{
+        //             color: color,
+        //             backgroundColor: color,
+        //             height: 2,
+        //             marginBottom: "3rem"
+        //         }}
+        //     />
+        // )
         return (  
-            <div>
-                <ColoredLine color="#93111e" />
+            <div className="main_footer pt-5">
+                {/* <ColoredLine color="#93111e" /> */}
                 <footer>
                     <div className="container">
-                        <div className="row mb-2">
+                        <div className="row mb-3 mt-4">
                             <div className="media col-sm-12 col-md-12 mb-1">
-                                <img className="mr-3" src={logo} alt="logo" style={{ width: 120 }} />
+                                <img className="d-block mx-auto mx-md-0 mr-3" src={logo} alt="logo" style={{ width: 120 }} />
                             </div>
                         </div>
                         <div className="row mb-2">
@@ -36,22 +37,22 @@ class Footer extends Component {
                                 Success through Dedication & Execution
                                 <div>
                                     <a>
-                                        <button className="btn btn-outline-dark mb-3 mt-3 btn-sm">
+                                        <button className="btn btn-outline-dark mb-3 mt-3 btn-sm text-sm-center">
                                             Learn more
                                         </button>
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-sm-12 col-md-2 lead mb-2" style={{ fontSize: 15 }}>
-                                <ul className="list-unstyled mb-3 ">
+                            <div className="col-sm-12 col-md-2 lead mb-2 " style={{ fontSize: 15 }}>
+                                <ul className="list-unstyled">
                                     <a href="/from-the-ceo" className="list-item">
                                         <li className="mb-2">ABOUT</li>
                                     </a>
-                                    <a href="#" className="list-item">
+                                    <a href="/join-us/#current-openings" className="list-item">
                                         <li>CAREERS</li>
                                     </a>
-                                    <a href="#" className="list-item">
-                                        <li className="mt-2">BLOG</li>
+                                    <a href="/services/#program-support" className="list-item">
+                                        <li className="mt-2">SERVICES</li>
                                     </a>
                                 </ul>
                             </div>
@@ -70,7 +71,7 @@ class Footer extends Component {
 
                         <hr style={{ borderColor: '#93121E' }} />
 
-                        <div className="row mb-2">
+                        <div className="row pb-4">
                             <div className="col-sm-12 col-md-8 text-muted align-text-top my-1" style={{ fontSize: 12.5 }}>
                                 {`All rights reserved © ${this.state.year.getFullYear()} MirLogic Solutions Corporation.`}
                             </div>
@@ -79,7 +80,7 @@ class Footer extends Component {
                                     <span className="text-primary" style={{ fontSize: 12.5 }}>SITEMAP </span>
                                 </a>
                                     |
-                                    <a href="https://www.linkedin.com/company/mirlogic-solutions-corp/">
+                                <a href="https://www.linkedin.com/company/mirlogic-solutions-corp/">
                                     <i className="fab fa-linkedin-in ml-1" style={{ color: "#646464" }}></i>
                                 </a>
                             </div>
