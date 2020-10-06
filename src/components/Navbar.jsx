@@ -174,7 +174,8 @@ class Navbar extends Component {
                             </ul>
                             {/*  Login button */}
                             <form className="form-inline my-2 my-lg-0">
-                                <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a>
+                                <a className="nav-link" href="https://netorgft998771.sharepoint.com/SitePages/Home.aspx " target="_blank" style={{ color: "#93111e"}}>LOGIN</a>
+                                {/* <a className="nav-link" href="/about-us/#loginModal" data-toggle="modal" data-target="#loginModal" style= {{ color: "#93111e"}}>{this.state.loggedIn ? "LOGOUT" : "LOGIN"}</a> */}
                             </form>
                         </div>
                 </nav>
