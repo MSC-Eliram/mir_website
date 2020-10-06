@@ -21,6 +21,10 @@
     transition: ease-in 0.4s;
 }
 
+.active {
+    border-bottom: 3px solid #93111e;
+}
+
 /* .nav-item .underLine {
     text-decoration: none;
     border: 5px solid transparent;
