@@ -87,7 +87,7 @@ class Navbar extends Component {
                                     <a className="nav-link" href="#" id="about-us" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         ABOUT US
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="about-us">
+                                    <ul className="dropdown-menu" aria-labelledby="about-us" style={{ borderColor: "#f7f7f7" }}>
                                         <li><a className="dropdown-item" href="/about-us/#fromTheCEO-section">From the CEO</a></li>
                                         <li><a className="dropdown-item" href="/about-us/#clients">Clients</a></li>
                                         <li><a className="dropdown-item" href="/about-us/#partners">Partners</a></li>
@@ -116,7 +116,7 @@ class Navbar extends Component {
                                     <a className="nav-link" id="services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         SERVICES
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="services">    
+                                    <ul className="dropdown-menu" aria-labelledby="services" style={{ borderColor: "#f7f7f7" }}>    
                                         <li><a className="dropdown-item" href="/services/#program-support">Program Support</a></li>
                                         <li><a className="dropdown-item" href="/services/#engineering">Engineering</a></li>
                                         <li><a className="dropdown-item" href="/services/#business-intelligence">Business Intelligence</a></li>
@@ -149,7 +149,7 @@ class Navbar extends Component {
                                     <a className="nav-link" id="join-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         JOIN US
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="join-us">
+                                    <ul className="dropdown-menu" aria-labelledby="join-us" style={{ borderColor: "#f7f7f7" }}>
                                         <a className="dropdown-item" href="/join-us/#we-are-together">We are together</a>
                                         <a className="dropdown-item" href="/join-us/#benefits">Benefits</a>
                                         <a className="dropdown-item" href="/join-us/#current-openings">Current Openings</a>
@@ -161,7 +161,7 @@ class Navbar extends Component {
                                     <a className="nav-link" id="contact-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         CONTACT US
                                     </a>
-                                    <ul className="dropdown-menu" aria-labelledby="contact-us">
+                                    <ul className="dropdown-menu" aria-labelledby="contact-us" style={{ borderColor: "#f7f7f7" }}>
                                         <a className="dropdown-item" href="/contact-us">Contact Us</a>
                                     </ul>
                                 </li>
