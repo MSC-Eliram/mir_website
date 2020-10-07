@@ -22,6 +22,9 @@
     #homeCard button {
         font-size: 5px;
     }
+    .miniCardText {
+        font-size: 0.9rem;
+    }
 
 }
 

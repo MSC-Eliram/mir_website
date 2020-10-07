@@ -40,7 +40,7 @@ class HomeMiniCards extends Component {
         const list = this.props.cards.map(card => (
             <div className="col-sm mt-4" key={card.id}>
                 <div className="text-dark text-center">
-                    <p className="text-primary">{card.text}</p>
+                    <p className="miniCardText text-primary">{card.text}</p>
                     <img src={card.img} alt="image" style={{ width: "20%", marginBottom: "0.7rem" }} />
                     <div>
                         <button className="btn btn-outline-primary align-items-center mb-2">
