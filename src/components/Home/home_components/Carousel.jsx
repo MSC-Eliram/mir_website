@@ -1,6 +1,9 @@
 import React from 'react';
 
-import Hill from '../../../images/hill.jpg';
+import white_house from '../../../images/WH.jpeg';
+import capitol_hill from '../../../images/CH.jpeg';
+import memorial from '../../../images/memorial.jpeg';
+
 
 import './Carousel.css'
 
@@ -14,22 +17,22 @@ const Carousel = () => {
             </ol>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="d-block w-100" src={Hill} alt="First slide" />
+                        <img className="d-block w-100" src={capitol_hill} alt="First slide" />
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" src={Hill} alt="Second slide" />
+                        <img className="d-block w-100" src={memorial} alt="Second slide" />
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block w-100" src={Hill} alt="Third slide" />
+                        <img className="d-block w-100" src={white_house} alt="Third slide" />
                     </div>
                 </div>
                 
                 <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <i className="fas fa-chevron-left text-secondary" style={{ fontSize: "35px" }}></i>
+                <i className="fas fa-chevron-left text-secondary" style={{ fontSize: "25px" }}></i>
                     <span className="sr-only bg-primaty">Previous</span>
                 </a>
                 <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <i className="fas fa-chevron-right text-secondary" style={{ fontSize: "35px" }}></i>
+                    <i className="fas fa-chevron-right text-secondary" style={{ fontSize: "25px" }}></i>
                     <span className="sr-only">Next</span>
                 </a>
         </div>

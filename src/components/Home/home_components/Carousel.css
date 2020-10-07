@@ -5,10 +5,11 @@
 }
 
 .carousel-item img {
-    width: 100%;
+    /* width: 100%; */
     background-repeat: no-repeat;
     background-size: cover; 
     height: 100%;
+    filter: grayscale();
 } 
 
 /* Smartphones (portrait and landscape) ----------- */

@@ -1,3 +1,4 @@
+// This conponents dispaly on Home screen
 import React, { Component } from 'react';
 
 import axios from "axios";
