@@ -18,11 +18,11 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .textCenterBox {
-        width: 70%!important;
+        width: 65%!important;
         top: 18%;
     }
-    .textCenter, .display-4  {
-        font-size: 1rem!important;
+    #homeText  {
+        font-size: 1.2rem!important;
     }
     .lead {
         font-size: 0.8rem;
@@ -30,20 +30,28 @@
     .button_section button {
        font-size: 0.7rem;
        padding: 4px;
-    }      
+    }
+    /* for <h1> in all the pages */
+    .display-4 {
+        font-size: 1.9rem;
+    }     
 }
 
 @media only screen and (min-device-width : 481px) and (max-device-width : 765px) {
     .textCenterBox {
         width: 350px;
-        top: 35%!important;
+        top: 30%!important;
     }
-    .textCenter, .display-4  {
-        font-size: 1.5rem;
+    #homeText {
+        font-size: 1.8rem;
     }
     .lead {
         font-size: 0.8rem;
     }
+    /* for <h1> in all the pages */
+    .display-4 {
+        font-size: 2rem;
+    }  
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -52,25 +60,33 @@
         width: 400px;
         top: 25%;
     }
-    .textCenter, .display-4  {
-        font-size: 2rem;
+    #homeText  {
+        font-size: 1.8rem;
     }
     .lead {
         font-size: 0.8rem;
     }
+    /* for <h1> in all the pages */
+    .display-4 {
+        font-size: 2.1rem;
+    }  
 }
 
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1024px) {
+@media only screen  and (min-width : 1023px) and (max-device-width : 1823px) {
     .textCenterBox {
         width: 550px;
     }
-    .textCenter, .display-4 {
-        font-size: 2.5rem;
+    #homeText {
+        font-size: 2.6rem;
     }
     .lead {
         font-size: 0.9rem;
     }
+    /* for <h1> in all the pages */
+    .display-4 {
+        font-size: 2rem;
+    }  
 }
 
 /* Large screens ----------- */
@@ -78,10 +94,14 @@
     .textCenterBox {
         width: 650px;
     }
-    .textCenter {
-        font-size: 2rem;
+    #homeText {
+        font-size: 3rem;
     }
     .lead {
         font-size: 0.9rem;
     }
+    /* for <h1> in all the pages */
+    .display-4 {
+        font-size: 2.5rem;
+    }  
 }

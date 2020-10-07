@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import axios from "axios";
 
-import '../Home/home_components/HomeContact.css';
+import './ContactUsForm.css';
 
 class HomeContact extends Component {
     constructor(props) {
@@ -61,9 +61,9 @@ class HomeContact extends Component {
 
     render() {
         return (
-            <div className="HomeContact pb-4" style={{ height: "100%", margin: "2rem 4rem", width: "100%" }}>
-                <div className="container pb-4">
-                <h3 className="pt-4 mb-4 text-center text-sm-left">Contact Us</h3>
+            <div className="contactUsForm pb-4">
+                <div className="container pb-2">
+                <h3 className="pt-4 mb-4 text-md-center text-sm-left text-primary">Contact Us</h3>
                     <div className="row align-items-center">
                         <div className="col pt-4">
                             <form onSubmit={this.handleSubmit}>
@@ -120,7 +120,6 @@ class HomeContact extends Component {
                                 </div>
                                 <button type="submit" className="btn btn-outline-info">Submit</button>
                             </form>
-                            <br />
                         </div>
                     </div>
                 </div>
