@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import CreateOpeningForm from './CreateOpeningForm';
+// import CreateOpeningForm from './CreateOpeningForm';
 import OpeningsList from './OpeningsList';
 
 

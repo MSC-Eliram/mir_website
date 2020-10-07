@@ -1,0 +1,21 @@
+.contactUsForm {
+    height: 100%;
+    margin: 2rem 3.5rem 6rem 3.5rem;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.conformation {
+    background-color: chocolate;
+    display: none;
+}
+
+.conformationAppear {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+
