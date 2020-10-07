@@ -1,5 +1,6 @@
 import React from 'react';
-import HomeContact from '../Home/home_components/HomeContact'
+
+import ContactUSForm from './ContactUsForm';
 
 const ContactMe = () => {
     return (
@@ -45,7 +46,7 @@ const ContactMe = () => {
                         <br />
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.515160869053!2d-77.07928135000067!3d38.79774777948592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b1bd2cc22bd7%3A0x943d5249a0cce180!2s2560%20Huntington%20Ave%2C%20Alexandria%2C%20VA%2022303!5e0!3m2!1sen!2sus!4v1600452484219!5m2!1sen!2sus" width="100%" height="400"></iframe> 
                     </div>
-                    <HomeContact />
+                    <ContactUSForm />
                 </div>
             </div>
         </div>
