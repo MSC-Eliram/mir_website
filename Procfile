@@ -1,1 +1,1 @@
-python ./flask_parts/api.py
+python .\flask_parts\api.py
