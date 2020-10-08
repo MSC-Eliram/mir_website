@@ -19,7 +19,7 @@ const SEAPORTE = () => {
 
             <div className="scope">
                 <h3 style={{ fontWeight: 100 }}>SCOPE:</h3>
-                <p> The Seaport Enhanced (SeaPort-e) Multiple Award Contract (MAC) vehicle is the Navyâ€™s electronic acquisition platform 
+                <p> The Seaport Enhanced (SeaPort-e) Multiple Award Contract (MAC) vehicle is the Navy's electronic acquisition platform 
                     for support services in 22 Functional Task Areas including Configuration Management, Software Programming, Information 
                     Technology support, and Program Management. SeaPort-e utilizes a web-based procurement portal to facilitate its performance-based 
                     service acquisitions to ensure efficiency, quality, and reduce cycle time. All task orders are competitively solicited, awarded 
@@ -35,7 +35,7 @@ const SEAPORTE = () => {
             <br />
 
             <div className="section1">
-                <p>MirLogic Solutions is qualified for SeaPort-e Zones 1, 2, 3, 4, 5 and 6.:</p>
+                <p>MirLogic Solutions is qualified for SeaPort-e Zones 1, 2, 3, 4, 5 and 6.</p>
 
                 <br />
                 <br />

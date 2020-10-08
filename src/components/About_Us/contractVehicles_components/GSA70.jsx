@@ -32,7 +32,7 @@ const GSA70 = () => {
 
                 <br />
 
-                <p>IT Schedule 70â€™s Special Item Number (SIN) 132-51 offers the following professional services:</p>
+                <p>IT Schedule 70's Special Item Number (SIN) 132-51 offers the following professional services:</p>
                 <ul>
                     <li><span>Cloud services (all associated labor)</span></li>
                     <li><span>Cognitive computing</span></li>
