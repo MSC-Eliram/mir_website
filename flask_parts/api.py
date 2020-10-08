@@ -9,14 +9,6 @@ import json
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/')
-def you_man():
-    return "fuck you man."
-
-@app.route('/time')
-def get_current_time():
-    return 'the time is now'
-    #return {'time': time.time()}
 
 @app.route('/job_postings')
 def get_job_postings():
