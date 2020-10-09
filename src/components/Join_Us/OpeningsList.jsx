@@ -19,7 +19,7 @@ class OpeningsList extends Component {
     }
 
     componentDidMount() {
-        fetch('http://127.0.0.1:5000/job_postings').then(res => res.json()).then(data => {
+        fetch('https://emsserver.herokuapp.com/job_postings').then(res => res.json()).then(data => {
             console.log(data);
             this.setState({
                 openings: Object.values(data)[0],
