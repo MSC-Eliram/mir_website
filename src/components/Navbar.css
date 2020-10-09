@@ -11,10 +11,15 @@
     margin-top: -9px;
 }
 
+
 .colored-nav {
     transition: ease-in-out 0.4s;
     background-color: #d3d3d3ee;
     font-weight: 600;
+}
+
+.dropdown-menu{
+    margin-top: 0;
 }
 
 .original {
